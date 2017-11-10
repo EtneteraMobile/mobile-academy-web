@@ -124,7 +124,7 @@
               <div class="col-md-3">
                 <img src="img/speakers/milos-felix.jpg" alt="">
               </div>
-              <div class="col-md-8 col-offset-md-1">
+              <div class="col-md-8 col-md-offset-1">
                 <h3>
                   Mobile Division Leader
                   Miloš felix
