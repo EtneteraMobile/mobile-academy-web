@@ -1,0 +1,28 @@
+// About carousel
+
+.about-carousel-wrapper {
+	position: absolute;
+	width: 50%;
+	left: 55%;
+	top: 100px;
+
+	.flickity-prev-next-button {
+		margin-left: 40px;
+		&.previous {
+			margin-left: 290px;
+		}
+	}
+}
+
+.about-carousel {
+	outline: none;
+	overflow: hidden;
+}
+
+.about-carousel__item {
+	margin-right: 30px;
+	img {
+		display: block;
+		margin-bottom: 30px;
+	}
+}

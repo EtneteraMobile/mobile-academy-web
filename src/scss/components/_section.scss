@@ -1,0 +1,24 @@
+// Section
+
+.section {
+	&.about-us {
+		padding: 100px 0 130px;
+		position: relative;
+	}
+	&.gain {
+		padding: 180px 0;
+		background: url("../img/gain-bg.jpg") center no-repeat;
+		background-size: cover;
+	}
+	&.harmonogram {
+		padding: 100px 0 0;
+	}
+	&.contact {
+		padding: 100px 0 0;
+		background: url("../img/contact-bg.jpg") center bottom no-repeat;
+		height: 880px;
+	}
+	&.speakers {
+		padding: 110px 0 0;
+	}
+}

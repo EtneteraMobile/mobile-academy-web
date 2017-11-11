@@ -1,17 +1,95 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var minifyCss = require('gulp-minify-css');
+/*!
+ * gulp
+ * $ npm install gulp-ruby-sass gulp-autoprefixer gulp-cssnano gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-notify gulp-rename gulp-livereload gulp-cache del --save-dev
+ */
+
+
+
+var gulp = require('gulp'),
+	//sass = require('gulp-sass'),
+	minifyCss = require('gulp-minify-css');
+
+    sass = require('gulp-ruby-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    cssnano = require('gulp-cssnano'),
+    jshint = require('gulp-jshint'),
+    uglify = require('gulp-uglify'),
+    imagemin = require('gulp-imagemin'),
+    rename = require('gulp-rename'),
+    concat = require('gulp-concat'),
+    notify = require('gulp-notify');
+    cache = require('gulp-cache'),
+    livereload = require('gulp-livereload'),
+    del = require('del');
+
 
 gulp.task('styles', function() {
-  gulp.src('./scss/style.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(minifyCss({compatibility: 'ie9'}))
-    .pipe(gulp.dest('./css/'))
+  return sass('src/scss/style.scss', { style: 'expanded' })
+    .pipe(autoprefixer('last 2 version'))
+    .pipe(gulp.dest('dist/css'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(cssnano())
+    .pipe(gulp.dest('dist/css'))
+    .pipe(notify({ message: 'Styles task complete' }));
 });
 
+
+var script_paths = [
+		'node_modules/jquery/dist/jquery.js',
+        'node_modules/flickity/dist/flickity.pkgd.js',
+		'src/js/**/*.js'
+	];
+
+
+gulp.task('scripts', function() {
+  return gulp.src(script_paths)
+    .pipe(jshint('.jshintrc'))
+    .pipe(jshint.reporter('default'))
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('dist/js'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/js'))
+    .pipe(notify({ message: 'Scripts task complete' }));
+});
+
+
+gulp.task('images', function() {
+  return gulp.src('src/img/**/*')
+    .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
+    .pipe(gulp.dest('dist/img'))
+    .pipe(notify({ message: 'Images task complete' }));
+});
+
+
+
+gulp.task('clean', function() {
+    return del(['dist/css', 'dist/js', 'dist/assets/img']);
+});
+
+
+gulp.task('default', ['clean'], function() {
+    gulp.start('styles', 'scripts', 'images');
+});
+
+
+
 // Watch task
-gulp.task('default',function() {
-  // run task initially, after that watch
-  gulp.start('styles');
-  gulp.watch('./scss/*.scss',['styles']);
+gulp.task('watch', function() {
+
+  // Watch .scss files
+  gulp.watch('src/scss/**/*.scss', ['styles']);
+
+  // Watch .js files
+  gulp.watch('src/js/**/*.js', ['scripts']);
+
+  // Watch image files
+  gulp.watch('src/img/**/*', ['images']);
+
+  // Create LiveReload server
+  livereload.listen();
+
+  // Watch any files in dist/, reload on change
+  gulp.watch(['dist/**']).on('change', livereload.changed);
+
 });

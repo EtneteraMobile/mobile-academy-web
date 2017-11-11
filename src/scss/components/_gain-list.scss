@@ -1,0 +1,44 @@
+// Gain list
+
+.gain-list {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-top: 60px;
+	li {
+		margin: 0;
+		padding: 0;
+		width: 200px;
+		height: 200px;
+		text-align: center;
+		background: white; 
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+		color: $primary-color;
+		font-weight: 700;
+		font-size: 1.6rem;
+		text-transform: uppercase;
+		box-shadow: 2px 3px 10px 2px rgba(0,0,0,0.1);
+		transition: all linear 0.2s;
+		&:hover {
+			background: $primary-color;
+			color: white;
+			box-shadow: 0 8px 30px 8px rgba(0,0,0,.15);
+			path {
+				fill: white;
+			}
+		}
+	}	
+
+	svg {
+		margin: 0 auto 30px;
+		path {
+			transition: all linear 0.2s;
+			fill: $primary-color;
+		}
+	}
+}

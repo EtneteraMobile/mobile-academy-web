@@ -2,32 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap v4 only grid system | JonathanMH</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Mobile Academy 2017</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=BenchNine&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.min.css">
   </head>
   <body>
     <div class="wrapper">
-          <header class="header">
+      <header class="header">
       <div class="container">
-        <a href="/"><img src="img/logo.svg" alt=""></a>
+        <a href="/"><img src="dist/img/logo.svg" alt=""></a>
       <nav class="nav">
         <ul>
-          <li>úvod</li>
-          <li>O akademii</li>
-          <li>Co získaš</li>
-          <li>Speakeři</li>
-          <li>Harmonogram</li>
-          <li>Kontakt</li>
+          <li class="active"><a href="#hero">úvod</a></li>
+          <li><a href="#about-us">O akademii</a></li>
+          <li><a href="#gain">Co získáš</a></li>
+          <li><a href="#speakers">Speakeři</a></li>
+          <li><a href="#harmonogram">Harmonogram</a></li>
+          <li><a href="#contact">Kontakt</a></li>
         </ul>
         <a href="#TODO" class="btn">Přihlásit se</a>
       </nav>
       </div>
     </header>
 
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <h1>Mobile Academy</h1>
+    <section id="hero" class="hero">
+        <div class="hero__content">
+          <h1 class="center">Mobile Academy</h1>
           <span class="hero__date">leden 2018, Praha</span>
           <a href="#TODO" class="btn btn-large">Přihlaš se</a>
           <ul class="hero__social">
@@ -42,10 +44,9 @@
             <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="27px" height="24px" viewBox="0 0 28.1 22.61"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>icon twitter</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_twitter" data-name="icon twitter" class="cls-1" d="M0,20A16.43,16.43,0,0,0,8.84,22.6a16.22,16.22,0,0,0,16.41-16q0-.47,0-.95a11.65,11.65,0,0,0,2.87-3,11.51,11.51,0,0,1-3.31.9A5.73,5.73,0,0,0,27.33.42,11.7,11.7,0,0,1,23.67,1.8,5.8,5.8,0,0,0,19.46,0a5.73,5.73,0,0,0-5.62,7A16.41,16.41,0,0,1,2,1,5.68,5.68,0,0,0,3.74,8.67,5.81,5.81,0,0,1,1.13,8a5.73,5.73,0,0,0,4.62,5.67,5.83,5.83,0,0,1-2.6.1,5.76,5.76,0,0,0,5.39,4A11.69,11.69,0,0,1,0,20Z"/></g></g></svg></a></li>
           </ul>
         </div>
-      </div>
     </section>
 
-    <section class="section about-us">
+    <section id="about-us" class="section about-us">
       <div class="container">
         <div class="row">
         <div class="col-md-6">
@@ -63,7 +64,7 @@
             </li>
             <li class="accordion__item">
               <div class="accordion__title">
-                Pro koho je určena?
+                Jak mobilní akademie probíhá?
               </div>
               <div class="accordion__content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur in dolor a congue. Nunc sed nisl nec neque quis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
@@ -71,7 +72,7 @@
             </li>
             <li class="accordion__item">
               <div class="accordion__title">
-                Pro koho je určena?
+                Co je potřeba pro úspešné absolvování?
               </div>
               <div class="accordion__content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur in dolor a congue. Nunc sed nisl nec neque quis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
@@ -81,14 +82,36 @@
         </div>
       </div>
       </div>
+      <div class="about-carousel-wrapper">
+        <div class="about-carousel">
+            <div class="about-carousel__item">
+              <img src="/dist/img/about/about-1.jpg" alt="">
+              <img src="/dist/img/about/about-2.jpg" alt="">
+            </div>
+            <div class="about-carousel__item">
+              <img src="/dist/img/about/about-3.jpg" alt="">
+            </div>
+            <div class="about-carousel__item">
+              <img src="/dist/img/about/about-1.jpg" alt="">
+              <img src="/dist/img/about/about-2.jpg" alt="">
+            </div>
+            <div class="about-carousel__item">
+              <img src="/dist/img/about/about-3.jpg" alt="">
+            </div>
+            <div class="about-carousel__item">
+              <img src="/dist/img/about/about-1.jpg" alt="">
+              <img src="/dist/img/about/about-2.jpg" alt="">
+            </div>
+          </div>
+      </div>
     </section>
 
-    <section class="section gain">
+    <section id="gain" class="section gain">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
             <div class="text-center">
-              <h2>Co získaš</h2>
+              <h2 class="center">Co získáš</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur in dolor a congue. Nunc sed nisl nec neque quis dui.</p>
             </div>
           </div>
@@ -115,46 +138,139 @@
     </section>
 
 
-    <section class="section speakers">
+    <section id="speakers" class="section speakers">
       <div class="container">
-        <h2>Speakeři</h2>
-        <ul>
-          <li>
+        <h2 class="big">Speakeři</h2>
+        <div class="speakers-carousel">
+          <div class="speakers-carousel__item">
             <div class="row">
               <div class="col-md-3">
-                <img src="img/speakers/milos-felix.jpg" alt="">
+                <img src="dist/img/speakers/milos-felix.jpg" alt="">
               </div>
-              <div class="col-md-8 col-md-offset-1">
-                <h3>
-                  Mobile Division Leader
+              <div class="speakers__wrapper col-md-6">
+                <div class="speakers__content">
+                  <h3>
+                  <span class="speakers__position">Mobile Division Leader</span>
                   Miloš felix
                 </h3>
                 <p>We feel that the Czech pool of mobile developers does not currently have a unified community that would meet regularly, bond, share true know-how and mutually move ahead. </p>
-                <ul class="speakers-social">
-                  <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="19px" height="20px" viewBox="0 0 23.07 23.13"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_instagram" data-name="icon instagram" class="cls-1" d="M11.55,7.73a3.85,3.85,0,1,1-3.84,3.86h0a3.85,3.85,0,0,1,3.84-3.85m0-1.93a5.78,5.78,0,1,0,5.77,5.8h0A5.77,5.77,0,0,0,11.55,5.8Zm6.15-1.93a1.54,1.54,0,1,1-1.54,1.55h0A1.54,1.54,0,0,1,17.7,3.87h0ZM16.54,1.93a4.63,4.63,0,0,1,4.61,4.63v10a4.62,4.62,0,0,1-4.61,4.63h-10a4.62,4.62,0,0,1-4.61-4.63v-10A4.63,4.63,0,0,1,6.54,1.93h10m0-1.93h-10A6.56,6.56,0,0,0,0,6.55v10a6.56,6.56,0,0,0,6.54,6.55h10a6.56,6.56,0,0,0,6.54-6.55v-10A6.56,6.56,0,0,0,16.54,0Z"/></g></g></svg></a></li>
+                <ul class="speakers__social">
+                  <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="21px" viewBox="0 0 23.07 23.13"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_instagram" data-name="icon instagram" class="cls-1" d="M11.55,7.73a3.85,3.85,0,1,1-3.84,3.86h0a3.85,3.85,0,0,1,3.84-3.85m0-1.93a5.78,5.78,0,1,0,5.77,5.8h0A5.77,5.77,0,0,0,11.55,5.8Zm6.15-1.93a1.54,1.54,0,1,1-1.54,1.55h0A1.54,1.54,0,0,1,17.7,3.87h0ZM16.54,1.93a4.63,4.63,0,0,1,4.61,4.63v10a4.62,4.62,0,0,1-4.61,4.63h-10a4.62,4.62,0,0,1-4.61-4.63v-10A4.63,4.63,0,0,1,6.54,1.93h10m0-1.93h-10A6.56,6.56,0,0,0,0,6.55v10a6.56,6.56,0,0,0,6.54,6.55h10a6.56,6.56,0,0,0,6.54-6.55v-10A6.56,6.56,0,0,0,16.54,0Z"/></g></g></svg></a></li>
                   <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="10px" height="20px" viewBox="0 0 12.05 22.58"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>icon facebook</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_facebook" data-name="icon facebook" class="cls-1" d="M11.4,11.29H7.19V22.58H2.34V11.29H0V7.6H2.34V5.2C2.34,1.94,3.75,0,7.59,0H12V4H8.41C7.33,4,7.2,4.56,7.2,5.6v2H12Z"/></g></g></svg></a></li>
                   <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="21px" height="20px" viewBox="0 0 24.56 23.52"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_linkedin" data-name="icon linkedin" class="cls-1" d="M24.56,14.43v9.09H19.3V15c0-2.14-.76-3.59-2.67-3.59a2.87,2.87,0,0,0-2.7,1.93,3.53,3.53,0,0,0-.18,1.28v8.86H8.49s.07-14.37,0-15.86h5.27V9.91l0,.05h0V9.91A5.23,5.23,0,0,1,18.5,7.29C22,7.29,24.56,9.55,24.56,14.43ZM3,0a2.75,2.75,0,0,0-.47,5.48H3A2.75,2.75,0,0,0,3.39,0ZM.32,23.52H5.58V7.66H.32Z"/></g></g></svg></a></li>
                   <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="22px" height="20px" viewBox="0 0 28.1 22.61"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>icon twitter</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_twitter" data-name="icon twitter" class="cls-1" d="M0,20A16.43,16.43,0,0,0,8.84,22.6a16.22,16.22,0,0,0,16.41-16q0-.47,0-.95a11.65,11.65,0,0,0,2.87-3,11.51,11.51,0,0,1-3.31.9A5.73,5.73,0,0,0,27.33.42,11.7,11.7,0,0,1,23.67,1.8,5.8,5.8,0,0,0,19.46,0a5.73,5.73,0,0,0-5.62,7A16.41,16.41,0,0,1,2,1,5.68,5.68,0,0,0,3.74,8.67,5.81,5.81,0,0,1,1.13,8a5.73,5.73,0,0,0,4.62,5.67,5.83,5.83,0,0,1-2.6.1,5.76,5.76,0,0,0,5.39,4A11.69,11.69,0,0,1,0,20Z"/></g></g></svg></a></li>
                 </ul>
+                </div>
               </div>
             </div>
-          </li>
-        </ul>
+          </div>
+          <div class="speakers-carousel__item">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="dist/img/speakers/milos-felix.jpg" alt="">
+              </div>
+              <div class="speakers__wrapper col-md-6">
+                <div class="speakers__content">
+                  <h3>
+                  <span class="speakers__position">Mobile Division Leader</span>
+                  Miloš felix
+                </h3>
+                <p>We feel that the Czech pool of mobile developers does not currently have a unified community that would meet regularly, bond, share true know-how and mutually move ahead. </p>
+                <ul class="speakers__social">
+                  <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="21px" viewBox="0 0 23.07 23.13"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_instagram" data-name="icon instagram" class="cls-1" d="M11.55,7.73a3.85,3.85,0,1,1-3.84,3.86h0a3.85,3.85,0,0,1,3.84-3.85m0-1.93a5.78,5.78,0,1,0,5.77,5.8h0A5.77,5.77,0,0,0,11.55,5.8Zm6.15-1.93a1.54,1.54,0,1,1-1.54,1.55h0A1.54,1.54,0,0,1,17.7,3.87h0ZM16.54,1.93a4.63,4.63,0,0,1,4.61,4.63v10a4.62,4.62,0,0,1-4.61,4.63h-10a4.62,4.62,0,0,1-4.61-4.63v-10A4.63,4.63,0,0,1,6.54,1.93h10m0-1.93h-10A6.56,6.56,0,0,0,0,6.55v10a6.56,6.56,0,0,0,6.54,6.55h10a6.56,6.56,0,0,0,6.54-6.55v-10A6.56,6.56,0,0,0,16.54,0Z"/></g></g></svg></a></li>
+                  <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="10px" height="20px" viewBox="0 0 12.05 22.58"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>icon facebook</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_facebook" data-name="icon facebook" class="cls-1" d="M11.4,11.29H7.19V22.58H2.34V11.29H0V7.6H2.34V5.2C2.34,1.94,3.75,0,7.59,0H12V4H8.41C7.33,4,7.2,4.56,7.2,5.6v2H12Z"/></g></g></svg></a></li>
+                  <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="21px" height="20px" viewBox="0 0 24.56 23.52"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_linkedin" data-name="icon linkedin" class="cls-1" d="M24.56,14.43v9.09H19.3V15c0-2.14-.76-3.59-2.67-3.59a2.87,2.87,0,0,0-2.7,1.93,3.53,3.53,0,0,0-.18,1.28v8.86H8.49s.07-14.37,0-15.86h5.27V9.91l0,.05h0V9.91A5.23,5.23,0,0,1,18.5,7.29C22,7.29,24.56,9.55,24.56,14.43ZM3,0a2.75,2.75,0,0,0-.47,5.48H3A2.75,2.75,0,0,0,3.39,0ZM.32,23.52H5.58V7.66H.32Z"/></g></g></svg></a></li>
+                  <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="22px" height="20px" viewBox="0 0 28.1 22.61"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>icon twitter</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_twitter" data-name="icon twitter" class="cls-1" d="M0,20A16.43,16.43,0,0,0,8.84,22.6a16.22,16.22,0,0,0,16.41-16q0-.47,0-.95a11.65,11.65,0,0,0,2.87-3,11.51,11.51,0,0,1-3.31.9A5.73,5.73,0,0,0,27.33.42,11.7,11.7,0,0,1,23.67,1.8,5.8,5.8,0,0,0,19.46,0a5.73,5.73,0,0,0-5.62,7A16.41,16.41,0,0,1,2,1,5.68,5.68,0,0,0,3.74,8.67,5.81,5.81,0,0,1,1.13,8a5.73,5.73,0,0,0,4.62,5.67,5.83,5.83,0,0,1-2.6.1,5.76,5.76,0,0,0,5.39,4A11.69,11.69,0,0,1,0,20Z"/></g></g></svg></a></li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="speakers-carousel__item">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="dist/img/speakers/milos-felix.jpg" alt="">
+              </div>
+              <div class="speakers__wrapper col-md-6">
+                <div class="speakers__content">
+                  <h3>
+                  <span class="speakers__position">Mobile Division Leader</span>
+                  Miloš felix
+                </h3>
+                <p>We feel that the Czech pool of mobile developers does not currently have a unified community that would meet regularly, bond, share true know-how and mutually move ahead. </p>
+                <ul class="speakers__social">
+                  <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="21px" viewBox="0 0 23.07 23.13"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_instagram" data-name="icon instagram" class="cls-1" d="M11.55,7.73a3.85,3.85,0,1,1-3.84,3.86h0a3.85,3.85,0,0,1,3.84-3.85m0-1.93a5.78,5.78,0,1,0,5.77,5.8h0A5.77,5.77,0,0,0,11.55,5.8Zm6.15-1.93a1.54,1.54,0,1,1-1.54,1.55h0A1.54,1.54,0,0,1,17.7,3.87h0ZM16.54,1.93a4.63,4.63,0,0,1,4.61,4.63v10a4.62,4.62,0,0,1-4.61,4.63h-10a4.62,4.62,0,0,1-4.61-4.63v-10A4.63,4.63,0,0,1,6.54,1.93h10m0-1.93h-10A6.56,6.56,0,0,0,0,6.55v10a6.56,6.56,0,0,0,6.54,6.55h10a6.56,6.56,0,0,0,6.54-6.55v-10A6.56,6.56,0,0,0,16.54,0Z"/></g></g></svg></a></li>
+                  <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="10px" height="20px" viewBox="0 0 12.05 22.58"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>icon facebook</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_facebook" data-name="icon facebook" class="cls-1" d="M11.4,11.29H7.19V22.58H2.34V11.29H0V7.6H2.34V5.2C2.34,1.94,3.75,0,7.59,0H12V4H8.41C7.33,4,7.2,4.56,7.2,5.6v2H12Z"/></g></g></svg></a></li>
+                  <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="21px" height="20px" viewBox="0 0 24.56 23.52"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_linkedin" data-name="icon linkedin" class="cls-1" d="M24.56,14.43v9.09H19.3V15c0-2.14-.76-3.59-2.67-3.59a2.87,2.87,0,0,0-2.7,1.93,3.53,3.53,0,0,0-.18,1.28v8.86H8.49s.07-14.37,0-15.86h5.27V9.91l0,.05h0V9.91A5.23,5.23,0,0,1,18.5,7.29C22,7.29,24.56,9.55,24.56,14.43ZM3,0a2.75,2.75,0,0,0-.47,5.48H3A2.75,2.75,0,0,0,3.39,0ZM.32,23.52H5.58V7.66H.32Z"/></g></g></svg></a></li>
+                  <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="22px" height="20px" viewBox="0 0 28.1 22.61"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>icon twitter</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_twitter" data-name="icon twitter" class="cls-1" d="M0,20A16.43,16.43,0,0,0,8.84,22.6a16.22,16.22,0,0,0,16.41-16q0-.47,0-.95a11.65,11.65,0,0,0,2.87-3,11.51,11.51,0,0,1-3.31.9A5.73,5.73,0,0,0,27.33.42,11.7,11.7,0,0,1,23.67,1.8,5.8,5.8,0,0,0,19.46,0a5.73,5.73,0,0,0-5.62,7A16.41,16.41,0,0,1,2,1,5.68,5.68,0,0,0,3.74,8.67,5.81,5.81,0,0,1,1.13,8a5.73,5.73,0,0,0,4.62,5.67,5.83,5.83,0,0,1-2.6.1,5.76,5.76,0,0,0,5.39,4A11.69,11.69,0,0,1,0,20Z"/></g></g></svg></a></li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="speakers-carousel__item">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="dist/img/speakers/milos-felix.jpg" alt="">
+              </div>
+              <div class="speakers__wrapper col-md-6">
+                <div class="speakers__content">
+                  <h3>
+                  <span class="speakers__position">Mobile Division Leader</span>
+                  Miloš felix
+                </h3>
+                <p>We feel that the Czech pool of mobile developers does not currently have a unified community that would meet regularly, bond, share true know-how and mutually move ahead. </p>
+                <ul class="speakers__social">
+                  <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="21px" viewBox="0 0 23.07 23.13"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_instagram" data-name="icon instagram" class="cls-1" d="M11.55,7.73a3.85,3.85,0,1,1-3.84,3.86h0a3.85,3.85,0,0,1,3.84-3.85m0-1.93a5.78,5.78,0,1,0,5.77,5.8h0A5.77,5.77,0,0,0,11.55,5.8Zm6.15-1.93a1.54,1.54,0,1,1-1.54,1.55h0A1.54,1.54,0,0,1,17.7,3.87h0ZM16.54,1.93a4.63,4.63,0,0,1,4.61,4.63v10a4.62,4.62,0,0,1-4.61,4.63h-10a4.62,4.62,0,0,1-4.61-4.63v-10A4.63,4.63,0,0,1,6.54,1.93h10m0-1.93h-10A6.56,6.56,0,0,0,0,6.55v10a6.56,6.56,0,0,0,6.54,6.55h10a6.56,6.56,0,0,0,6.54-6.55v-10A6.56,6.56,0,0,0,16.54,0Z"/></g></g></svg></a></li>
+                  <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="10px" height="20px" viewBox="0 0 12.05 22.58"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>icon facebook</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_facebook" data-name="icon facebook" class="cls-1" d="M11.4,11.29H7.19V22.58H2.34V11.29H0V7.6H2.34V5.2C2.34,1.94,3.75,0,7.59,0H12V4H8.41C7.33,4,7.2,4.56,7.2,5.6v2H12Z"/></g></g></svg></a></li>
+                  <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="21px" height="20px" viewBox="0 0 24.56 23.52"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_linkedin" data-name="icon linkedin" class="cls-1" d="M24.56,14.43v9.09H19.3V15c0-2.14-.76-3.59-2.67-3.59a2.87,2.87,0,0,0-2.7,1.93,3.53,3.53,0,0,0-.18,1.28v8.86H8.49s.07-14.37,0-15.86h5.27V9.91l0,.05h0V9.91A5.23,5.23,0,0,1,18.5,7.29C22,7.29,24.56,9.55,24.56,14.43ZM3,0a2.75,2.75,0,0,0-.47,5.48H3A2.75,2.75,0,0,0,3.39,0ZM.32,23.52H5.58V7.66H.32Z"/></g></g></svg></a></li>
+                  <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="22px" height="20px" viewBox="0 0 28.1 22.61"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>icon twitter</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_twitter" data-name="icon twitter" class="cls-1" d="M0,20A16.43,16.43,0,0,0,8.84,22.6a16.22,16.22,0,0,0,16.41-16q0-.47,0-.95a11.65,11.65,0,0,0,2.87-3,11.51,11.51,0,0,1-3.31.9A5.73,5.73,0,0,0,27.33.42,11.7,11.7,0,0,1,23.67,1.8,5.8,5.8,0,0,0,19.46,0a5.73,5.73,0,0,0-5.62,7A16.41,16.41,0,0,1,2,1,5.68,5.68,0,0,0,3.74,8.67,5.81,5.81,0,0,1,1.13,8a5.73,5.73,0,0,0,4.62,5.67,5.83,5.83,0,0,1-2.6.1,5.76,5.76,0,0,0,5.39,4A11.69,11.69,0,0,1,0,20Z"/></g></g></svg></a></li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="speakers-carousel__item">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="dist/img/speakers/milos-felix.jpg" alt="">
+              </div>
+              <div class="speakers__wrapper col-md-6">
+                <div class="speakers__content">
+                  <h3>
+                  <span class="speakers__position">Mobile Division Leader</span>
+                  Miloš felix
+                </h3>
+                <p>We feel that the Czech pool of mobile developers does not currently have a unified community that would meet regularly, bond, share true know-how and mutually move ahead. </p>
+                <ul class="speakers__social">
+                  <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="21px" viewBox="0 0 23.07 23.13"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_instagram" data-name="icon instagram" class="cls-1" d="M11.55,7.73a3.85,3.85,0,1,1-3.84,3.86h0a3.85,3.85,0,0,1,3.84-3.85m0-1.93a5.78,5.78,0,1,0,5.77,5.8h0A5.77,5.77,0,0,0,11.55,5.8Zm6.15-1.93a1.54,1.54,0,1,1-1.54,1.55h0A1.54,1.54,0,0,1,17.7,3.87h0ZM16.54,1.93a4.63,4.63,0,0,1,4.61,4.63v10a4.62,4.62,0,0,1-4.61,4.63h-10a4.62,4.62,0,0,1-4.61-4.63v-10A4.63,4.63,0,0,1,6.54,1.93h10m0-1.93h-10A6.56,6.56,0,0,0,0,6.55v10a6.56,6.56,0,0,0,6.54,6.55h10a6.56,6.56,0,0,0,6.54-6.55v-10A6.56,6.56,0,0,0,16.54,0Z"/></g></g></svg></a></li>
+                  <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="10px" height="20px" viewBox="0 0 12.05 22.58"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>icon facebook</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_facebook" data-name="icon facebook" class="cls-1" d="M11.4,11.29H7.19V22.58H2.34V11.29H0V7.6H2.34V5.2C2.34,1.94,3.75,0,7.59,0H12V4H8.41C7.33,4,7.2,4.56,7.2,5.6v2H12Z"/></g></g></svg></a></li>
+                  <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="21px" height="20px" viewBox="0 0 24.56 23.52"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_linkedin" data-name="icon linkedin" class="cls-1" d="M24.56,14.43v9.09H19.3V15c0-2.14-.76-3.59-2.67-3.59a2.87,2.87,0,0,0-2.7,1.93,3.53,3.53,0,0,0-.18,1.28v8.86H8.49s.07-14.37,0-15.86h5.27V9.91l0,.05h0V9.91A5.23,5.23,0,0,1,18.5,7.29C22,7.29,24.56,9.55,24.56,14.43ZM3,0a2.75,2.75,0,0,0-.47,5.48H3A2.75,2.75,0,0,0,3.39,0ZM.32,23.52H5.58V7.66H.32Z"/></g></g></svg></a></li>
+                  <li><a href="#TODO"><svg xmlns="http://www.w3.org/2000/svg" width="22px" height="20px" viewBox="0 0 28.1 22.61"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>icon twitter</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_twitter" data-name="icon twitter" class="cls-1" d="M0,20A16.43,16.43,0,0,0,8.84,22.6a16.22,16.22,0,0,0,16.41-16q0-.47,0-.95a11.65,11.65,0,0,0,2.87-3,11.51,11.51,0,0,1-3.31.9A5.73,5.73,0,0,0,27.33.42,11.7,11.7,0,0,1,23.67,1.8,5.8,5.8,0,0,0,19.46,0a5.73,5.73,0,0,0-5.62,7A16.41,16.41,0,0,1,2,1,5.68,5.68,0,0,0,3.74,8.67,5.81,5.81,0,0,1,1.13,8a5.73,5.73,0,0,0,4.62,5.67,5.83,5.83,0,0,1-2.6.1,5.76,5.76,0,0,0,5.39,4A11.69,11.69,0,0,1,0,20Z"/></g></g></svg></a></li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <ul class="speakers-list">
-        <li><span class="speakers-list__name">Miloš felix</span></li>
-        <li><span class="speakers-list__name">Le kien</span></li>
-        <li><span class="speakers-list__name">Číslinský ján</span></li>
-        <li><span class="speakers-list__name">Franek ondřej</span></li>
-        <li><span class="speakers-list__name">Bien Radek</span></li>
-      </ul>
+      <div class="speakers-list">
+        <div class="speaker__item speaker-1"><a href="#TODO"><span class="speakers-list__name">Miloš felix</span></a></div>
+        <div class="speaker__item speaker-2"><a href="#TODO"><span class="speakers-list__name">Le kien</span></a></div>
+        <div class="speaker__item speaker-3"><a href="#TODO"><span class="speakers-list__name">Čislinský jan</span></a></div>
+        <div class="speaker__item speaker-4"><a href="#TODO"><span class="speakers-list__name">Franek ondřej</span></a></div>
+        <div class="speaker__item speaker-5"><a href="#TODO"><span class="speakers-list__name">Bien Radek</span></a></div>
+      </div>
     </section>
 
     
-    <section class="section harmonogram">
+    <section id="harmonogram" class="section harmonogram">
       <div class="container">
-        <h2>Harmonogram</h2>
-        <ul class="harmonogram__list">
+        <h2 class="center">Harmonogram</h2>
+
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <ul class="harmonogram__list">
           <li>
             <a href="#TODO">
               <span class="harmonogram__title">Registrace</span>
@@ -198,39 +314,46 @@
             </a>
           </li>
         </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section contact">
+    <section id="contact" class="section contact">
       <div class="container">
-        <h2>Kontakt</h2>
+        <div class="row">
+          <div class="col col-md-7">
+            <h2 class="center">Kontakt</h2>
         <h3>Etnetera a.s.</h3>
-        <ul>
+        <ul class="contact-list">
           <li>
-            <span class="contact__icon"><img src="/img/icon-phone-2.svg" alt=""></span>
+            <span class="contact__icon"><img src="dist/img/icon-phone-2.svg" alt=""></span>
             +420 233 326 810
           </li>
           <li>
-            <span class="contact__icon"><img src="/img/icon-place.svg" alt=""></span>
+            <span class="contact__icon"><img src="dist/img/icon-place.svg" alt=""></span>
             Jankovcova 1037/49<br>
             170 00 Praha 7
           </li>
           <li>
-            <span class="contact__icon"><img src="/img/icon-mail.svg" alt=""></span>
+            <span class="contact__icon"><img src="dist/img/icon-mail.svg" alt=""></span>
             <a href="#TODO">info@etnetera.cz</a>
           </li>
         </ul>
         <a href="#TODO" class="btn">Podívejte se na mapu</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <footer class="footer">
-      <div class="container">
+      <div class="container text-center">
         <p>Nenašel jsi odpovědi na to, co jsi hledal?</p>
         <a href="#TODO" class="btn btn--white">Napiš nám</a>
       </div>
     </footer>
 
     </div>
+    <script type="text/javascript" src="dist/js/main.min.js"></script>
   </body>
 </html>

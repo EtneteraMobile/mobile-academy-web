@@ -1,0 +1,66 @@
+// Accordion
+
+.accordion {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.accordion__item {
+	padding: 0;
+	margin: 0;
+	&.active {
+		background: $primary-color;
+		color: white;
+		box-shadow: 0 8px 30px 8px rgba(0,0,0,.15);
+		background: $primary-color;
+
+		.accordion__title {
+			box-shadow: none;
+			&:after {
+				background: url("../img/icon_arrow_white.svg") no-repeat;
+				transform: rotate(-90deg);
+			}
+		}
+	}
+	&:hover {
+		background: $primary-color;
+	}
+}
+
+.accordion__title {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	padding: 40px 0 30px 35px;
+	font-weight: 700;
+	box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.05);
+	cursor: pointer;
+	position: relative;
+	&:hover {
+		background: $primary-color;
+		color: white;
+		&:after {
+			background: url("../img/icon_arrow_white.svg") no-repeat;
+		}
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		width: 10px;
+		height: 18px;
+		background: url("../img/icon_arrow.svg") no-repeat;
+		right: 35px;
+		top: 40px;
+	}
+}
+
+.accordion__content {
+	display: none;
+	p {
+		font-size: 1.4rem;
+		color: white;
+		line-height: 23px;
+		padding: 0 40px 30px 35px;
+		margin-bottom: 0;
+	}
+}

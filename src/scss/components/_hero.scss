@@ -1,0 +1,43 @@
+// Hero
+
+.hero {
+	height: 800px;
+	background: url("../img/hero-bg.jpg") center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.hero__content {
+	position: absolute;
+	bottom: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+.hero__date {
+	font-size: 2.4rem;
+	margin-bottom: 55px;
+	text-transform: uppercase;
+	display: block;
+}
+
+.hero__social {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	li {
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		margin: 0 15px;
+		path {
+			transition: all linear 0.3s;
+		}
+		a {
+			&:hover path {
+				fill:#000;
+			}
+		}
+	}
+}

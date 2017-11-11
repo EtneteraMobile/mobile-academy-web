@@ -1,0 +1,60 @@
+// Typography
+
+$primary-color: #ff5858;
+
+body, html {
+	font-family: 'Proxima Nova', Arial, sans-serif;
+	// font-family: 'BenchNine', sans-serif;
+}
+
+h1 {
+	font-size: 7.2rem;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+h2 {
+	position: relative;
+	font-size: 4.8rem;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	&.big {
+		font-size: 6rem;
+	}
+}
+
+h1,h2 {
+	&:after {
+		content: '';
+		position: absolute;
+		width: 100px;
+		height: 2px;
+		display: block;
+		bottom: 0;
+		background-color: $primary-color;
+	}
+	&.center {
+		text-align: center;
+		&:after {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+h3 {
+	text-transform: uppercase;
+	font-size: 3.6rem;
+	margin-bottom: 60px;
+}
+
+p {
+	color: #999999;
+	font-size: 1.8rem;
+	margin-bottom: 45px;
+	line-height: 30px;
+	font-weight: 300;
+}
