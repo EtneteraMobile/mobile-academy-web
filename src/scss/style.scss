@@ -8,13 +8,15 @@ $enable-grid-classes:       true;
 @import './bootstrap/_grid.scss';
 
 // @import 'components/_fonts.scss';
+@import 'components/_media-queries.scss';
 @import 'components/_typography.scss';
 @import 'components/_layout.scss';
 @import 'components/_accordion.scss';
 @import 'components/_button.scss';
 @import 'components/_section.scss';
 @import 'components/_utils.scss';
-@import 'components/_header.scss';
+@import 'components/_header.scss'; 
+@import 'components/_menu-toggle.scss';
 @import 'components/_gain-list.scss';
 @import 'components/_nav.scss';
 @import 'components/_hero.scss';

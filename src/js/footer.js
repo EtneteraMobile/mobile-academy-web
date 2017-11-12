@@ -20,6 +20,14 @@
 	  cellAlign: 'left'
 	});
 
+    $('.about-carousel-mobile').flickity({
+      // options
+      cellAlign: 'left',
+      pageDots: false,
+      contain: true,
+      cellAlign: 'left'
+    });
+
 
 	$('.speakers-list').flickity({
 	  asNavFor: '.speakers-carousel',
@@ -31,27 +39,25 @@
 
 ///////////////////////////////////////
 
-	// var scrolltop = function(target){
-	// 		$("html, body").animate({
-	//           scrollTop: $(target).offset().top
-	//         }, 1000);
-	// 	};
 
-	// $("a[href*='#']:not([href='#']):not([href='#inline_content'])").click(function() {
- //    if (location.pathname.replace(/^\//,"") === this.pathname.replace(/^\//,"") && location.hostname === this.hostname) {
- //      var target = $(this.hash);
- //      target = target.length ? target : $("[name=" + this.hash.slice(1) +"]");
- //      if (target.length) {
- //      	scrolltop(target);
- //        return false;
- //      }
- //    }
- //  });
+    $(".menu-toggle, .nav a").on('click', function(){
+
+        $('html').toggleClass('fix-body');
+        $('nav').toggleClass('active');
+        
+        var text = $('.menu-toggle__text').text();
+
+        console.log(text);
+        
+        $('.menu-toggle__text').text(
+            text == "Menu" ? "Zavřít" : "Menu");
+
+    });
 
 
 ///////////////////////////////////////
 
-	$(document).on('touchstart click', '.accordion__title', function(){
+	$(document).on('click', '.accordion__title', function(){
 
 
 		var active = $(this).parent().hasClass('active');

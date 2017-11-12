@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Mobile Academy 2017</title>
 
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
@@ -12,24 +14,31 @@
     <div class="wrapper">
       <header class="header">
       <div class="container">
-        <a href="/"><img src="dist/img/logo.svg" alt=""></a>
-      <nav class="nav">
-        <ul>
-          <li class="active"><a href="#hero">úvod</a></li>
-          <li><a href="#about-us">O akademii</a></li>
-          <li><a href="#gain">Co získáš</a></li>
-          <li><a href="#speakers">Speakeři</a></li>
-          <li><a href="#harmonogram">Harmonogram</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-        </ul>
-        <a href="#TODO" class="btn">Přihlásit se</a>
-      </nav>
+    
+        <a class="logo" href="/"><img src="dist/img/logo.svg" alt=""></a>
+        
+        <nav class="nav">
+          <ul>
+            <li class="active"><a href="#hero">úvod</a></li>
+            <li><a href="#about-us">O akademii</a></li>
+            <li><a href="#gain">Co získáš</a></li>
+            <li><a href="#speakers">Speakeři</a></li>
+            <li><a href="#harmonogram">Harmonogram</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+          <a href="#TODO" class="btn">Přihlásit se</a>
+        </nav>
+        
+        <div class="menu-toggle">
+          <span class="menu-toggle__text">Menu</span> 
+        </div>
+
       </div>
     </header>
 
     <section id="hero" class="hero">
         <div class="hero__content">
-          <h1 class="center">Mobile Academy</h1>
+          <h1 class="center">Mobile Academy</h1> 
           <span class="hero__date">leden 2018, Praha</span>
           <a href="#TODO" class="btn btn-large">Přihlaš se</a>
           <ul class="hero__social">
@@ -49,7 +58,7 @@
     <section id="about-us" class="section about-us">
       <div class="container">
         <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-7">
           <h2>O akademii</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur in dolor a congue. Nunc sed nisl nec neque quis dui.</p>
 
@@ -103,13 +112,28 @@
               <img src="/dist/img/about/about-2.jpg" alt="">
             </div>
           </div>
+
+          <div class="about-carousel-mobile">
+            <div class="about-carousel__item">
+              <img src="/dist/img/about/about-1.jpg" alt="">
+            </div>
+            <div class="about-carousel__item">
+              <img src="/dist/img/about/about-2.jpg" alt="">
+            </div>
+            <div class="about-carousel__item">
+              <img src="/dist/img/about/about-3.jpg" alt="">
+            </div>
+            <div class="about-carousel__item">
+              <img src="/dist/img/about/about-1.jpg" alt="">
+            </div>
+          </div>
       </div>
     </section>
 
     <section id="gain" class="section gain">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-md-offset-3">
+          <div class="col-md-11 col-lg-9 col-xl-7 col-md-offset-2 col-lg-offset-3 col-lg-offset-2">
             <div class="text-center">
               <h2 class="center">Co získáš</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur in dolor a congue. Nunc sed nisl nec neque quis dui.</p>
@@ -144,10 +168,10 @@
         <div class="speakers-carousel">
           <div class="speakers-carousel__item">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-xs-offset-2 col-xs-11 col-md-8  col-sm-offset-0 col-lg-5 speakers-carousel__img">
                 <img src="dist/img/speakers/milos-felix.jpg" alt="">
               </div>
-              <div class="speakers__wrapper col-md-6">
+              <div class="speakers__wrapper col-md-15 col-lg-10">
                 <div class="speakers__content">
                   <h3>
                   <span class="speakers__position">Mobile Division Leader</span>
@@ -269,7 +293,7 @@
         <h2 class="center">Harmonogram</h2>
 
         <div class="row">
-          <div class="col-md-10 col-md-offset-1">
+          <div class="col-xl-11 col-xl-offset-2">
             <ul class="harmonogram__list">
           <li>
             <a href="#TODO">
@@ -322,7 +346,7 @@
     <section id="contact" class="section contact">
       <div class="container">
         <div class="row">
-          <div class="col col-md-7">
+          <div class="col col-md-12 col-lg-9">
             <h2 class="center">Kontakt</h2>
         <h3>Etnetera a.s.</h3>
         <ul class="contact-list">
@@ -348,7 +372,7 @@
 
     <footer class="footer">
       <div class="container text-center">
-        <p>Nenašel jsi odpovědi na to, co jsi hledal?</p>
+        <p>Nenašel jsi odpovědi na to,<br> co jsi hledal?</p>
         <a href="#TODO" class="btn btn--white">Napiš nám</a>
       </div>
     </footer>

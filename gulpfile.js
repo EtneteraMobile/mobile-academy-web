@@ -1,19 +1,18 @@
 /*!
  * gulp
- * $ npm install gulp-ruby-sass gulp-autoprefixer gulp-cssnano gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-notify gulp-rename gulp-livereload gulp-cache del --save-dev
+ * $ npm install browser-sync gulp-ruby-sass gulp-autoprefixer gulp-cssnano gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-notify gulp-rename gulp-livereload gulp-cache del --save-dev
  */
 
-
+var pkg = require('./package.json');
 
 var gulp = require('gulp'),
-	//sass = require('gulp-sass'),
 	minifyCss = require('gulp-minify-css');
-
     sass = require('gulp-ruby-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     cssnano = require('gulp-cssnano'),
     jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
+    browserSync = require('browser-sync').create(),
     imagemin = require('gulp-imagemin'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
@@ -25,6 +24,9 @@ var gulp = require('gulp'),
 
 gulp.task('styles', function() {
   return sass('src/scss/style.scss', { style: 'expanded' })
+    .on('error', function (err) {
+      console.error('Error!', err.message);
+    })
     .pipe(autoprefixer('last 2 version'))
     .pipe(gulp.dest('dist/css'))
     .pipe(rename({suffix: '.min'}))
@@ -36,7 +38,7 @@ gulp.task('styles', function() {
 
 var script_paths = [
 		'node_modules/jquery/dist/jquery.js',
-        'node_modules/flickity/dist/flickity.pkgd.js',
+    'node_modules/flickity/dist/flickity.pkgd.js',
 		'src/js/**/*.js'
 	];
 
@@ -62,6 +64,14 @@ gulp.task('images', function() {
 });
 
 
+// Static server
+gulp.task('serve', ['watch'], function() {
+    browserSync.init({
+        proxy: pkg.name + '.lc',
+        open: 'external'
+    });
+});
+
 
 gulp.task('clean', function() {
     return del(['dist/css', 'dist/js', 'dist/assets/img']);
@@ -86,10 +96,13 @@ gulp.task('watch', function() {
   // Watch image files
   gulp.watch('src/img/**/*', ['images']);
 
+  // Watch php files
+  gulp.watch('*.php').on('change', browserSync.reload);
+
   // Create LiveReload server
   livereload.listen();
 
   // Watch any files in dist/, reload on change
-  gulp.watch(['dist/**']).on('change', livereload.changed);
+  gulp.watch(['dist/**']).on('change', browserSync.reload);
 
 });

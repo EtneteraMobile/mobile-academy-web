@@ -10,6 +10,11 @@
 	padding: 0;
 	overflow: auto;
 	outline: none;
+	display: none;
+
+	@include sm {
+		display: block;
+	}
 	
 	.flickity-prev-next-button {
 		display: none;

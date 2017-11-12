@@ -1,0 +1,40 @@
+// Media Queries
+
+$sm-res: 544px !default;
+$md-res: 768px !default;
+$lg-res: 992px !default;
+$xl-res: 1261px !default;
+$xxl-res: 1421px !default;
+
+
+
+
+// Everthing larger than a portrait mobile up until mobile landscape
+@mixin xs {
+	@media only screen and (max-width : $sm-res - 1) { @content; }
+}
+
+@mixin sm {
+	@media only screen and (min-width : $sm-res) { @content; }
+}
+
+@mixin md {
+	@media only screen and (min-width : $md-res) { @content; }
+}
+
+@mixin lg {
+	@media only screen and (min-width : $lg-res) { @content; }
+}
+
+@mixin xl {
+	@media only screen and (min-width : $xl-res) { @content; }
+}
+
+@mixin xxl {
+	@media only screen and (min-width : $xxl-res) { @content; }
+}
+
+// Retina screens have a 1.5 pixel ratio, not 2
+@mixin retina {
+	@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) { @content; }
+}

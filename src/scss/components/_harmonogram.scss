@@ -4,14 +4,23 @@
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	margin-top: 40px;
 	display: flex;
 	flex-flow: row wrap;
+	@include sm {
+		margin-top: 40px;
+	}
 	li {
 		list-style: none;
 		margin: 0;
 		padding: 0;
-		flex-basis: 33%;
+		flex-basis: 100%;
+		@include sm {
+			flex-basis: 50%;		
+		}
+
+		@include lg {
+			flex-basis: 33%;		
+		}
 		a {
 			display: block;
 			padding: 30px;

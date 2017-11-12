@@ -1,5 +1,11 @@
 // Layout
 
+.fix-body, .fix-body body {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
 .wrapper {
 	position: relative;
 	max-width: 1920px;
@@ -7,5 +13,7 @@
 }
 
 .row {
-	flex-wrap: nowrap;
+	@include lg {
+		flex-wrap: nowrap;
+	}
 }

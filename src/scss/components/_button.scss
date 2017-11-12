@@ -4,10 +4,14 @@
 	color: $primary-color;	
 	border: 1px solid $primary-color;
 	border-radius: 30px;
-	padding: 8px 20px 6px;
+	padding: 14px 30px 12px;
 	font-weight: 600;
 	text-transform: uppercase;
 	transition: all linear 0.1s;
+
+	@include sm {
+		padding: 8px 20px 6px;
+	}
 
 	&:hover,&:active,&:focus {
 		color: white;
@@ -16,10 +20,15 @@
 	}
 
 	&--white {
-		padding: 8px 24px 6px;
+		padding: 14px 30px 12px;
 		color: white;	
 		font-weight: 400;
 		border-color: white;
+	
+		@include sm {
+			padding: 8px 24px 6px;
+		}
+
 		&:hover,&:active,&:focus {
 			color: $primary-color;
 			background: white;
@@ -28,19 +37,27 @@
 }
 
 .btn-large {
-	width: 380px;
-	font-size: 2.4rem;
+	font-size: 2rem;
 	color: white;
 	text-transform: uppercase;
 	background: $primary-color;
 	border: none;
-	display: inline-block;
+	display: block;
 	border-radius: 0;
-	padding: 25px 0 21px;
-	margin-bottom: 80px;
+	padding: 20px 0 18px;
+	margin-bottom: 50px;
 	position: relative;
 	box-shadow: 0 8px 30px 8px rgba(0,0,0,.15);
 	transition: all linear 0.1s;
+
+	@include sm {
+		width: 380px;
+		display: inline-block;
+		margin-bottom: 80px;
+		padding: 25px 0 21px;
+		font-size: 2.4rem;
+	}
+
 	&:hover,&:active,&:focus {
 		box-shadow: none;
 	}
@@ -48,9 +65,13 @@
 		content: '';
 		position: absolute;
 		right: 30px;
-		top: 31px;
+		top: 25px;
 		width: 10px;
 		height: 18px;
-		background: url("../img/icon_arrow_white.svg") center no-repeat; 
+		background: url("../img/icon_arrow_white.svg") center no-repeat;
+
+		@include sm {
+			top: 31px;
+		} 
 	}
 }

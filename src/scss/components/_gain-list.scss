@@ -6,12 +6,25 @@
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	margin-top: 60px;
+	overflow: auto;
+	padding: 20px 0;
+	@include md {
+		padding: 0;
+		margin-top: 60px;
+	}
+
+	@include lg {
+		overflow: visible;
+		padding: 0;
+		margin-top: 60px;
+	}
 	li {
 		margin: 0;
 		padding: 0;
-		width: 200px;
-		height: 200px;
+		flex: 0 0 125px;
+		margin-right: 15px;
+		padding: 0 15px;
+		height: 125px;
 		text-align: center;
 		background: white; 
 		display: flex;
@@ -19,11 +32,29 @@
 		align-content: center;
 		justify-content: center;
 		color: $primary-color;
-		font-weight: 700;
-		font-size: 1.6rem;
+		line-height: 20px;
+		font-size: 1.5rem;
 		text-transform: uppercase;
 		box-shadow: 2px 3px 10px 2px rgba(0,0,0,0.1);
 		transition: all linear 0.2s;
+
+		@include md {
+			flex: 0 0 170px;
+			font-size: 1.6rem;
+			padding: 0;
+			height: 170px;
+			font-weight: 700;
+		}
+
+		@include lg {
+			margin-right: 0;
+		}
+
+		@include xl {
+			flex: 0 0 200px;
+			height: 200px;
+		}
+
 		&:hover {
 			background: $primary-color;
 			color: white;
@@ -35,7 +66,10 @@
 	}	
 
 	svg {
-		margin: 0 auto 30px;
+		margin: 0 auto 10px;
+		@include md {
+			margin: 0 auto 30px;
+		}
 		path {
 			transition: all linear 0.2s;
 			fill: $primary-color;

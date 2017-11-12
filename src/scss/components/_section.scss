@@ -2,23 +2,59 @@
 
 .section {
 	&.about-us {
-		padding: 100px 0 130px;
+		padding: 50px 0 20px;
 		position: relative;
+
+		@include sm {
+			padding: 60px 0;
+		}
+
+		@include lg {
+			padding: 100px 0 130px;
+		}
 	}
 	&.gain {
-		padding: 180px 0;
+		padding: 50px 0;
 		background: url("../img/gain-bg.jpg") center no-repeat;
 		background-size: cover;
+
+		@include sm {
+			padding: 60px 0;
+		}
+
+		@include lg {
+			padding: 180px 0;
+		}
 	}
 	&.harmonogram {
-		padding: 100px 0 0;
+		padding: 20px 0 0;
+		@include sm {
+			padding: 60px 0 0;
+		}
+
+		@include lg {
+			padding: 100px 0 0;
+		}
 	}
 	&.contact {
-		padding: 100px 0 0;
+		padding: 50px 0 200px;
 		background: url("../img/contact-bg.jpg") center bottom no-repeat;
-		height: 880px;
+		background-size: 1200px;
+
+		@include sm {
+			background: url("../img/contact-bg.jpg") center bottom no-repeat;
+			height: 880px;
+			padding: 100px 0 0;
+		}
 	}
 	&.speakers {
-		padding: 110px 0 0;
+		padding: 50px 0 0;
+		@include sm {
+			padding: 60px 0 0;
+		}
+
+		@include lg {
+			padding: 110px 0 0;
+		}
 	}
 }

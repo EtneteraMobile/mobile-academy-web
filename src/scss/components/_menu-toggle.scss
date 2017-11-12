@@ -1,0 +1,57 @@
+// Menu toggle
+
+.menu-toggle {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    z-index: 1000;
+	border: 1px solid #cccccc;
+	padding: 10px 30px;
+	border-radius: 30px;
+
+    @include md {
+    	display: none;
+    }
+
+    span {
+    	text-transform: uppercase;
+    	font-weight: 700;
+    }
+        
+    &__text {
+        display: block;
+    }
+     
+    .homepage & {
+    	color: white;
+    }
+            
+ 
+    &__hamburger {
+        width: 60px;
+        height: 45px;
+        position: relative;
+        transform: rotate(0deg) scale(0.5);
+        transition: 500ms ease-in-out;
+        span {
+        	background: black;
+            display: block;
+            position: absolute;
+            height: 5px;
+            width: 100%;
+            border-radius: 5px;
+            opacity: 1;
+            left: 0;
+            transform: rotate(0deg);
+            transition: .25s ease-in-out;
+        }
+            
+
+            .homepage & {
+            	background: white;
+            }
+    }
+
+}
+

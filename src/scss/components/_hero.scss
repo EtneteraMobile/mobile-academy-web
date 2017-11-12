@@ -1,25 +1,43 @@
 // Hero
 
 .hero {
-	height: 800px;
+	height: 500px;
 	background: url("../img/hero-bg.jpg") center no-repeat;
 	background-size: cover;
 	position: relative;
+
+	@include sm {
+		height: 760px;
+	}
+
+	@include lg {
+		height: 800px;
+	}
 }
 
 .hero__content {
 	position: absolute;
-	bottom: 100px;
+	bottom: 50px;
+	text-align: center;
+	width: 80vw;
 	left: 50%;
 	transform: translateX(-50%);
-	text-align: center;
+
+	@include sm {
+		bottom: 100px;
+	}
 }
 
 .hero__date {
-	font-size: 2.4rem;
-	margin-bottom: 55px;
+	font-size: 2rem;
+	margin-bottom: 30px;
 	text-transform: uppercase;
 	display: block;
+
+	@include sm {
+		margin-bottom: 55px;
+		font-size: 2.4rem;
+	}
 }
 
 .hero__social {

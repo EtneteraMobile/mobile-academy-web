@@ -1,15 +1,33 @@
 // About carousel
 
 .about-carousel-wrapper {
-	position: absolute;
-	width: 50%;
-	left: 55%;
-	top: 100px;
+	padding-left: 10px;
+	text-align: center;
+	margin-top: 30px;
+	overflow: hidden;
+
+	@include lg {
+		overflow: visible;
+		margin-top: 0;
+		text-align: left;
+		padding-left: 0;
+		position: absolute;
+		width: 50%;
+		left: 50%;
+		top: 100px;
+	}
 
 	.flickity-prev-next-button {
-		margin-left: 40px;
+		margin: 0 10px;
+		@include lg {
+			margin: 0;
+			margin-left: 40px;	
+		}
+		
 		&.previous {
-			margin-left: 290px;
+			@include lg {
+				margin-left: 290px;
+			}
 		}
 	}
 }
@@ -17,6 +35,11 @@
 .about-carousel {
 	outline: none;
 	overflow: hidden;
+	display: none;
+
+	@include sm {
+		display: block;
+	}
 }
 
 .about-carousel__item {
@@ -24,5 +47,17 @@
 	img {
 		display: block;
 		margin-bottom: 30px;
+	}
+}
+
+
+.about-carousel-mobile {
+	@include sm {
+		display: none;
+	}
+
+	.about-carousel__item {
+		width: 250px;
+		margin-right: 10px;
 	}
 }

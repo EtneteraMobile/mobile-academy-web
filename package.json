@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-grid",
+  "name": "mobile-academy",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,6 +20,7 @@
     "jshint": "^2.9.5"
   },
   "devDependencies": {
+    "browser-sync": "^2.18.13",
     "del": "^3.0.0",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-cache": "^1.0.1",

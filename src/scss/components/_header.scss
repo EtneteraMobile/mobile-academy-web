@@ -1,32 +1,73 @@
 // Header
 
 .header {
-	position: fixed; 
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 2;
 	top: 0;
 	transition: all 0.2s ease-in-out;
+
+	@include lg {
+		position: fixed;
+	}
+
+	.btn {
+		@include md {
+			display: none;
+		}
+		@include lg {
+			display: inline-block;
+		}
+	}
+
 	.container {
-		height: 145px;
+		height: 80px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;	
 		transition: all 0.2s ease-in-out;
+
+		@include xs {
+			padding: 0 20px;
+		}
+
+		@include lg {
+			height: 145px;
+		}
 	}
 	&.small {
-		position: fixed;
-		background: white;
+		@include lg {
+			position: fixed;
+			background: white;
+		}
 		.container {
-			height: 80px;
+			@include lg {
+				height: 80px;
+			}
 		}
 		img {
+			@include lg {
+				height: 40px;
+			}
+		}
+	}
+	.logo {
+		z-index: 100;
+		position: relative;
+		img {
 			height: 40px;
+
+			@include lg {
+				height: auto;
+			}
 		}
 	}
 }
 
 .nav-up {
-    top: -145px;
+	@include sm {
+		top: -145px;
+	}
 }
