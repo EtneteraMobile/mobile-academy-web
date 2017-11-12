@@ -15023,19 +15023,24 @@ return Flickity;
 ///////////////////////////////////////
 
 
-    $(".menu-toggle, .nav a").on('click', function(){
 
-        $('html').toggleClass('fix-body');
-        $('nav').toggleClass('active');
-        
-        var text = $('.menu-toggle__text').text();
+    if($(window).width() <= 767){
 
-        console.log(text);
-        
-        $('.menu-toggle__text').text(
-            text == "Menu" ? "Zavřít" : "Menu");
+        $(".menu-toggle, .nav a").on('click', function(){
 
-    });
+            $('html').toggleClass('fix-body');
+            $('nav').toggleClass('active');
+            
+            var text = $('.menu-toggle__text').text();
+
+            console.log(text);
+            
+            $('.menu-toggle__text').text(
+                text == "Menu" ? "Zavřít" : "Menu");
+
+        });
+
+    }
 
 
 ///////////////////////////////////////

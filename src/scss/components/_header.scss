@@ -37,7 +37,18 @@
 			height: 145px;
 		}
 	}
-	&.small {
+	.logo {
+		z-index: 100;
+		position: relative;
+		img {
+			height: 40px;
+
+			@include lg {
+				height: auto;
+			}
+		}
+	}
+		&.small {
 		@include lg {
 			position: fixed;
 			background: white;
@@ -48,19 +59,8 @@
 			}
 		}
 		img {
-			@include lg {
+			@include md {
 				height: 40px;
-			}
-		}
-	}
-	.logo {
-		z-index: 100;
-		position: relative;
-		img {
-			height: 40px;
-
-			@include lg {
-				height: auto;
 			}
 		}
 	}
