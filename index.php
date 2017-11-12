@@ -190,10 +190,10 @@
           </div>
           <div class="speakers-carousel__item">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-xs-offset-2 col-xs-11 col-md-8  col-sm-offset-0 col-lg-5 speakers-carousel__img">
                 <img src="dist/img/speakers/milos-felix.jpg" alt="">
               </div>
-              <div class="speakers__wrapper col-md-6">
+              <div class="speakers__wrapper col-md-15 col-lg-10">
                 <div class="speakers__content">
                   <h3>
                   <span class="speakers__position">Mobile Division Leader</span>
@@ -212,10 +212,10 @@
           </div>
           <div class="speakers-carousel__item">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-xs-offset-2 col-xs-11 col-md-8  col-sm-offset-0 col-lg-5 speakers-carousel__img">
                 <img src="dist/img/speakers/milos-felix.jpg" alt="">
               </div>
-              <div class="speakers__wrapper col-md-6">
+              <div class="speakers__wrapper col-md-15 col-lg-10">
                 <div class="speakers__content">
                   <h3>
                   <span class="speakers__position">Mobile Division Leader</span>
@@ -234,10 +234,10 @@
           </div>
           <div class="speakers-carousel__item">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-xs-offset-2 col-xs-11 col-md-8  col-sm-offset-0 col-lg-5 speakers-carousel__img">
                 <img src="dist/img/speakers/milos-felix.jpg" alt="">
               </div>
-              <div class="speakers__wrapper col-md-6">
+              <div class="speakers__wrapper col-md-15 col-lg-10">
                 <div class="speakers__content">
                   <h3>
                   <span class="speakers__position">Mobile Division Leader</span>
@@ -256,10 +256,10 @@
           </div>
           <div class="speakers-carousel__item">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-xs-offset-2 col-xs-11 col-md-8  col-sm-offset-0 col-lg-5 speakers-carousel__img">
                 <img src="dist/img/speakers/milos-felix.jpg" alt="">
               </div>
-              <div class="speakers__wrapper col-md-6">
+              <div class="speakers__wrapper col-md-15 col-lg-10">
                 <div class="speakers__content">
                   <h3>
                   <span class="speakers__position">Mobile Division Leader</span>

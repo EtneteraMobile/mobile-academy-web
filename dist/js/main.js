@@ -15030,7 +15030,7 @@ return Flickity;
         
         var text = $('.menu-toggle__text').text();
 
-        console.log(text)l
+        console.log(text);
         
         $('.menu-toggle__text').text(
             text == "Menu" ? "Zavřít" : "Menu");
@@ -15130,10 +15130,11 @@ function hasScrolled() {
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
-    $('.nav a').each(function () {
+    $('.nav ul a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        var refElementPosition = refElement.position().top;
+        if (refElementPosition <= scrollPos && refElementPosition + refElement.height() > scrollPos) {
             $('.nav a').removeClass("active");
             currLink.addClass("active");
         }
@@ -15149,7 +15150,7 @@ function onScroll(event){
     //smoothscroll
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
-        $(document).off("scroll");
+        $(document).off("scroll"); 
         
         $('a').each(function () {
             $(this).removeClass('active');
@@ -15158,7 +15159,7 @@ function onScroll(event){
       
         var target = this.hash,
             menu = target,
-        	$target = $(target);
+            $target = $(target);
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top+2
         }, 500, 'swing', function () {
@@ -15166,6 +15167,7 @@ function onScroll(event){
             $(document).on("scroll", onScroll);
         });
     });
+
 
 
 ///////////////////////////////////////
