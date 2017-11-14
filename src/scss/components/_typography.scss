@@ -19,6 +19,17 @@ h1 {
 		font-size: 7.2rem;
 		margin-bottom: 40px;
 	}
+
+	span {
+		display: block;
+		font-size: 1.8rem;
+		line-height: 4rem;
+		font-weight: 400;
+		color: $primary-color;
+		@include sm {
+			font-size: 2rem;
+		}
+	} 
 }
 
 h2 {

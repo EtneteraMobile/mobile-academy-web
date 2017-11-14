@@ -36,8 +36,8 @@
 
     <section id="hero" class="hero">
         <div class="hero__content">
-          <h1 class="center">Mobile Academy</h1> 
-          <span class="hero__date">leden 2018, Praha</span>
+          <h1 class="center"><span>ETNETERA</span> MOBILE ACADEMY</h1> 
+          <span class="hero__date">únor - březen 2018, Praha</span>
           <a href="#TODO" class="btn btn-large">Přihlaš se</a>
           <ul class="hero__social">
             <li><a href="#TODO">
@@ -58,31 +58,47 @@
         <div class="row">
         <div class="col-lg-7">
           <h2>O akademii</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur in dolor a congue. Nunc sed nisl nec neque quis dui.</p>
+          <p>Otevíráme první ročník Mobile Academy, ucelený kurz v oblasti mobilního vývoje pořádaný firmou Etnetera a.s. V tomto běhu se zaměříme na iOS platformu a programovací jazyk Swift. Zdokonal svoje dovednosti po boku mentorů při práci na reálných projektech.</p>
 
           <ul class="accordion">
             <li class="accordion__item">
               <div class="accordion__title">
-                Pro koho je určena?
+                Pro koho je akademie určena? 
               </div>
               <div class="accordion__content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur in dolor a congue. Nunc sed nisl nec neque quis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p>Akademie je určena pro každého, kdo se chce naučit se nebo zdokonalit své dovednosti v oblasti mobilního vývoje na platformě iOS.</p>
               </div>
             </li>
             <li class="accordion__item">
               <div class="accordion__title">
-                Jak mobilní akademie probíhá?
+                Výběr účastníků.
               </div>
               <div class="accordion__content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur in dolor a congue. Nunc sed nisl nec neque quis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p>Na základě přijatých přihlášek pozveme zhruba dvě desítky účastníků na osobní setkání v lednu 2018. Z nich vybereme budoucí studenty, kteří poté nastoupí do Etnetera Mobile Academy a absolvují 8 týdenní kurz. </p>
               </div>
             </li>
             <li class="accordion__item">
               <div class="accordion__title">
-                Co je potřeba pro úspešné absolvování?
+                Jak akademie proběhne? 
               </div>
               <div class="accordion__content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur in dolor a congue. Nunc sed nisl nec neque quis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p>Studium proběhne v 8 za sebou jdoucích sobot a to formou celodenních workshopů složených z teorie a praktických cvičení. Po každém workshopu vám bude zadán domácí úkol. Pro úspěšné ukončení kurzu je důležité mít odchozeno alespoň 80 procent z 2 měsíčního kurzu. Budou tě učit lidé přímo z oboru, kteří se mobilnímu vývoji věnují denně. K dispozici ti budou každý den konzultanti. Celá akademie bude zakončena závěrečným projektem a party :)</p>
+              </div>
+            </li>
+            <li class="accordion__item">
+              <div class="accordion__title">
+                Co potřebuješ?
+              </div>
+              <div class="accordion__content">
+                <p>Nemáš Maca nebo iPhone? Nevadí! U pohovoru se domluvíme.</p>
+              </div>
+            </li>
+            <li class="accordion__item">
+              <div class="accordion__title">
+                Co absolvováním získáš?
+              </div>
+              <div class="accordion__content">
+                <p>Úspěšným absolvováním akademie získáš kvalitní základ pro kariéru mobilního vývojáře. V případě oboustranné spokojenosti ji můžeš nastartovat rovnou u nás v Etneteře.</p>
               </div>
             </li>
           </ul>
@@ -142,16 +158,16 @@
         <ul class="gain-list">
           <li>
 <svg xmlns="http://www.w3.org/2000/svg" width="36px" height="34px" viewBox="0 0 36 34"><defs><style>.cls-1{fill:#ff5858;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_book_copy" data-name="icon book copy" class="cls-1" d="M19,30.5H17V5h2ZM19,34H17V33a3,3,0,0,0-3-3H5a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0h9a5,5,0,0,1,5,5H17a3,3,0,0,0-3-3H5A3,3,0,0,0,2,5V25a3,3,0,0,0,3,3h9a5,5,0,0,1,5,5Zm0,0H17V33a5,5,0,0,1,5-5h9a3,3,0,0,0,3-3V5a3,3,0,0,0-3-3H22a3,3,0,0,0-3,3H17a5,5,0,0,1,5-5h9a5,5,0,0,1,5,5V25a5,5,0,0,1-5,5H22a3,3,0,0,0-3,3Z"/></g></g></svg>
-            <span class="gain-list__title">2 měsíce studia</span></li>
+            <span class="gain-list__title">8 nadupaných sobot</span></li>
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" width="36px" height="37px" viewBox="0 0 36 36"><defs><style>.cls-1{fill:#ff5858;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_speaker" data-name="icon speaker" class="cls-1" d="M18,25c-3.23,0-6.67-3.25-8.18-7.65A4,4,0,0,1,7.5,13.72,4.17,4.17,0,0,1,9.07,9.9C9.37,4.91,10.8,0,18,0s8.63,4.91,8.93,9.9a4.16,4.16,0,0,1,1.57,3.81,4,4,0,0,1-2.31,3.64C24.67,21.75,21.23,25,18,25ZM18,2c-4.86,0-6.68,2.25-7,8.6l0,.75-.73.18a2,2,0,0,0-.78,2.05c.09,1.17.71,1.9,1.11,1.91h.73l.21.7C12.8,20.4,15.88,23,18,23s5.2-2.6,6.45-6.8l.21-.7h.73c.4,0,1-.74,1.11-1.92a2,2,0,0,0-.78-2L25,11.35l0-.75C24.68,4.25,22.86,2,18,2Zm0,34C11.33,36,4.82,34.84.59,32.91A1,1,0,0,1,0,32c0-6.46,4-10.66,11.77-12.47l.45,1.94C5.53,23,2.26,26.18,2,31.35,6,33,11.92,34,18,34s12-1,16-2.65c-.25-5.17-3.51-8.32-10.21-9.88l.45-1.94C32,21.34,36,25.54,36,32a1,1,0,0,1-.59.91C31.18,34.84,24.67,36,18,36Z"/></g></g></svg>
-            <span class="gain-list__title">Etn speakery</span></li>
+            <span class="gain-list__title">vývojářské znalosti</span></li>
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" width="34px" height="37px" viewBox="0 0 34 35.99"><defs><style>.cls-1{fill:#ff5858;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_office" data-name="icon office" class="cls-1" d="M32,36H23a2,2,0,0,1-2-2V21H13V34a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V13.46a2,2,0,0,1,.74-1.55L14.16,1h0a4.51,4.51,0,0,1,5.68,0L33.26,11.91A2,2,0,0,1,34,13.46V34a2,2,0,0,1-2,2ZM13,19h8a2,2,0,0,1,2,2V34h9V13.46L18.58,2.55a2.52,2.52,0,0,0-3.15,0h0L2,13.46V34h9V21A2,2,0,0,1,13,19Z"/></g></g></svg>
-            <span class="gain-list__title">Kanceláře</span></li>
+            <span class="gain-list__title">4 trpělivé mentory</span></li>
           <li>
           <svg xmlns="http://www.w3.org/2000/svg" width="39px" height="36px" viewBox="0 0 38 35"><defs><style>.cls-1{fill:#ff5858;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_hardware" data-name="icon hardware" class="cls-1" d="M33,28H5a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0H33a5,5,0,0,1,5,5V23A5,5,0,0,1,33,28ZM5,2A3,3,0,0,0,2,5V23a3,3,0,0,0,3,3H33a3,3,0,0,0,3-3V5a3,3,0,0,0-3-3ZM23,35H15a1,1,0,0,1-.76-.34,1,1,0,0,1-.23-.8l1-7A1,1,0,0,1,16,26h6a1,1,0,0,1,1,.86l1,7a1,1,0,0,1-.23.8A1,1,0,0,1,23,35Zm-6.85-2h5.7l-.72-5H16.87ZM26,35H12a1,1,0,0,1,0-2H26a1,1,0,0,1,0,2ZM37,22H1V20H37Z"/></g></g></svg>
-          <span class="gain-list__title">hardware</span></li>
+          <span class="gain-list__title">zázemí našich kanceláří</span></li>
           <li>
           <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="36px" viewBox="0 0 22 36"><defs><style>.cls-1{fill:#ff5858;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_phone" data-name="icon phone" class="cls-1" d="M17,36H5a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0H17a5,5,0,0,1,5,5V31A5,5,0,0,1,17,36ZM5,2A3,3,0,0,0,2,5V31a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V5a3,3,0,0,0-3-3Zm6,31a2,2,0,1,1,2-2A2,2,0,0,1,11,33Zm0-2ZM13,5H9A1,1,0,0,1,9,3h4a1,1,0,0,1,0,2Z"/></g></g></svg>
           <span class="gain-list__title">iOS základy</span></li>
@@ -296,42 +312,42 @@
           <li>
             <a href="#TODO">
               <span class="harmonogram__title">Registrace</span>
-              <span class="harmonogram__number"><strong>10</strong>/2017</span>
-              <p>Nunc sed nisl nec neque quis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            </a>
-          </li>
-          <li>
-            <a href="#TODO">
-              <span class="harmonogram__title">Ukončení registrace</span>
               <span class="harmonogram__number"><strong>11</strong>/2017</span>
               <p>Nunc sed nisl nec neque quis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </a>
           </li>
           <li>
             <a href="#TODO">
-              <span class="harmonogram__title">Selekce kandidátů</span>
+              <span class="harmonogram__title">UKONČENÍ REGISTRACE</span>
               <span class="harmonogram__number"><strong>12</strong>/2017</span>
               <p>Nunc sed nisl nec neque quis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </a>
           </li>
           <li>
             <a href="#TODO">
-              <span class="harmonogram__title">Akademie jede!</span>
+              <span class="harmonogram__title">VÝBĚR STUDENTŮ</span>
               <span class="harmonogram__number"><strong>01</strong>/2018</span>
               <p>Nunc sed nisl nec neque quis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </a>
           </li>
           <li>
             <a href="#TODO">
-              <span class="harmonogram__title">Akademie jede</span>
-              <span class="harmonogram__number"><strong>01-02</strong>/2018</span>
+              <span class="harmonogram__title">ZAHAJOVACÍ PÁRTY</span>
+              <span class="harmonogram__number"><strong>02</strong>/2018</span>
               <p>Nunc sed nisl nec neque quis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </a>
           </li>
           <li>
             <a href="#TODO">
-              <span class="harmonogram__title">Promoce</span>
-              <span class="harmonogram__number"><strong>03</strong>/2018</span>
+              <span class="harmonogram__title">AKADEMIE JEDE</span>
+              <span class="harmonogram__number"><strong>02-03</strong>/2018</span>
+              <p>Nunc sed nisl nec neque quis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </a>
+          </li>
+          <li>
+            <a href="#TODO">
+              <span class="harmonogram__title">PROMOCE</span>
+              <span class="harmonogram__number"><strong>04</strong>/2018</span>
               <p>Nunc sed nisl nec neque quis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </a>
           </li>

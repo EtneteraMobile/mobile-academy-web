@@ -27,7 +27,7 @@
 		}
 	}
 	&.harmonogram {
-		padding: 20px 0 0;
+		padding: 50px 0 0;
 		@include sm {
 			padding: 60px 0 0;
 		}
@@ -46,6 +46,10 @@
 			height: 880px;
 			padding: 100px 0 0;
 		}
+
+		@include xxl {
+			background-size: 100% auto;
+		}
 	}
 	&.speakers {
 		padding: 50px 0 0;
@@ -55,6 +59,24 @@
 
 		@include lg {
 			padding: 110px 0 0;
+		}
+
+		h2 {
+			text-align: center;
+
+			@include sm {
+				text-align: left;
+			}
+
+			&:after {
+				left: 50%;
+				transform: translateX(-50%);
+
+				@include sm {
+					transform: none;
+					left: 0;
+				}
+			}
 		}
 	}
 }

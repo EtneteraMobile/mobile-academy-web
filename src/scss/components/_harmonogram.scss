@@ -25,7 +25,8 @@
 			display: block;
 			padding: 30px;
 			height: 220px;
-			box-shadow: 0 3px 10px 2px rgba(0,0,0,0.1);
+			position: relative;
+			box-shadow: 0 3px 10px 0px rgba(0,0,0,.1);
 			transition: all linear 0.1s;
 			&:hover {
 				box-shadow: 0 8px 30px 8px rgba(0,0,0,.15);
@@ -35,6 +36,19 @@
 				p,.harmonogram__title,.harmonogram__number {
 					color: #fff;
 				}
+
+				&:after {
+					opacity: 1;
+				}
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				top: 24px;
+				right: 20px;
+				width: 10px;
+				height: 18px;
+				background: url("../img/icon_arrow_white.svg") center bottom no-repeat;
 			}
 		}
 		p {
