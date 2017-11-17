@@ -15000,6 +15000,7 @@ return Flickity;
 	  cellAlign: 'left',
 	  pageDots: false,
 	  contain: true,
+      wrapAround: true,
 	  cellAlign: 'left'
 	});
 

@@ -19,6 +19,7 @@
 
 	.flickity-prev-next-button {
 		margin: 0 10px;
+		
 		@include lg {
 			margin: 0;
 			margin-left: 40px;	
@@ -44,8 +45,12 @@
 
 .about-carousel__item {
 	margin-right: 30px;
-	img {
-		display: block;
+	width: 260px;
+
+	&.bigger {
+		width: 550px;
+	}
+	.img-placeholder {
 		margin-bottom: 30px;
 	}
 }

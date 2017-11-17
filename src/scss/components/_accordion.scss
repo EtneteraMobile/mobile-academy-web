@@ -51,13 +51,14 @@
 		background: url("../img/icon_arrow.svg") no-repeat;
 		right: 35px;
 		top: 40px;
+		transform: rotate(90deg); 
 	}
 }
 
 .accordion__content {
 	display: none;
 	p {
-		font-size: 1.4rem;
+		font-size: 1.6rem; 
 		color: white;
 		line-height: 23px;
 		padding: 0 40px 30px 35px;

@@ -9,10 +9,6 @@
 	top: 0;
 	transition: all 0.2s ease-in-out;
 
-	@include lg {
-		position: fixed;
-	}
-
 	.btn {
 		@include md {
 			display: none;
@@ -42,18 +38,18 @@
 		position: relative;
 		img {
 			height: 40px;
+			transition: all 0.2s ease-in-out;
 
 			@include lg {
-				height: auto;
+				height: 60px;
 			}
 		}
 	}
 		&.small {
-		@include lg {
-			position: fixed;
-			background: white;
-		}
+		position: fixed;
+		background: white;
 		.container {
+			height: 60px;
 			@include lg {
 				height: 80px;
 			}
@@ -66,7 +62,9 @@
 	}
 }
 
+
 .nav-up {
+	top: -60px;
 	@include sm {
 		top: -145px;
 	}

@@ -32,7 +32,10 @@ gulp.task('styles', function() {
     .pipe(rename({suffix: '.min'}))
     .pipe(cssnano())
     .pipe(gulp.dest('dist/css'))
-    .pipe(notify({ message: 'Styles task complete' }));
+    .pipe(notify({ message: 'Styles task complete' }))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
 });
 
 
@@ -52,6 +55,7 @@ gulp.task('scripts', function() {
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
+    .pipe(browserSync.reload())
     .pipe(notify({ message: 'Scripts task complete' }));
 });
 
@@ -60,6 +64,7 @@ gulp.task('images', function() {
   return gulp.src('src/img/**/*')
     .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
     .pipe(gulp.dest('dist/img'))
+    .pipe(browserSync.reload())
     .pipe(notify({ message: 'Images task complete' }));
 });
 
@@ -101,8 +106,5 @@ gulp.task('watch', function() {
 
   // Create LiveReload server
   livereload.listen();
-
-  // Watch any files in dist/, reload on change
-  gulp.watch(['dist/**']).on('change', browserSync.reload);
 
 });

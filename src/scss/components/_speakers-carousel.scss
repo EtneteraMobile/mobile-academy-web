@@ -18,7 +18,12 @@
 
 	.flickity-prev-next-button {
 		position: absolute;
-		z-index: 100;
+		z-index: 1;
+
+		@include md {
+			display: none;
+		}
+
 		&.previous {
 			top: 280px;
 			left: 0;
@@ -60,7 +65,7 @@
 .speakers-carousel__img {
 	text-align: center;
 	img {
-		width: 245px;
+		// width: 245px;
 		@include sm {
 			width: auto;
 			max-width: 100%;
@@ -100,6 +105,11 @@
 	}
 	p {
 		margin-bottom: 25px;
+		font-size: 1.4rem;
+
+		@include md {
+			font-size: 1.8rem;
+		}
 	}
 }
 
@@ -115,21 +125,26 @@
 		margin: 0;
 		padding: 0;
 		display: inline-block;
-		margin: 0 6px;
+		margin: 0 3px;
 		@include sm {
 			margin: 0;
 			margin-right: 12px;	
 		}
 		a {
 			display: block;
-			width: 60px;
-			height: 60px;
+			width: 50px;
+			height: 50px;
 			border-radius: 30px;
 			border: 1px solid #cdcdcd;
 			display: flex;
 			align-content: center;
 			justify-content: center;
 			transition: all linear 0.2s;
+
+			@include sm {
+				width: 60px;
+				height: 60px;
+			}
 			svg {
 				margin: auto;
   				display: block;
@@ -157,6 +172,7 @@
 	border: 1px solid #cdcdcd;
 	transition: all linear 0.2s;
 	background: url("../img/icon_arrow.svg") center no-repeat;
+
 	&.previous {
 		transform: rotate(180deg);
 	}
