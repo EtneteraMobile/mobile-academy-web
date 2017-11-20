@@ -8,24 +8,21 @@
 	  // options
 	  cellAlign: 'left',
 	  pageDots: false,
-	  contain: true,
-	  cellAlign: 'left'
+	  contain: true
 	});
 
 	$('.about-carousel').flickity({
 	  // options
 	  cellAlign: 'left',
 	  pageDots: false,
-	  contain: true,
-	  cellAlign: 'left'
+	  contain: true
 	});
 
     $('.about-carousel-mobile').flickity({
       // options
       cellAlign: 'left',
       pageDots: false,
-      contain: true,
-      cellAlign: 'left'
+      contain: true
     });
 
 
@@ -53,7 +50,7 @@
             console.log(text);
             
             $('.menu-toggle__text').text(
-                text == "Menu" ? "Zavřít" : "Menu");
+                text === "Menu" ? "Zavřít" : "Menu");
 
         });
 
@@ -68,7 +65,7 @@
 		var active = $(this).parent().hasClass('active');
 		
 
-		if(active == false) {
+		if(active === false) {
 
 			$(".accordion__item").each(function(){
 				$(this).removeClass('active');	
@@ -116,7 +113,7 @@ setInterval(function() {
     }
 }, 250);
 
-function hasScrolled() {
+var function hasScrolled() {
     var st = $(this).scrollTop();
     
 
