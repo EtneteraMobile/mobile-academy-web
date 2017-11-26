@@ -87,7 +87,7 @@
 			$(".accordion__content").each(function(){
 				$(this).slideUp();	
 			});
-		};
+		}
 
 	});
 
@@ -104,7 +104,7 @@ var navbarHeight = 60;
 
 $(window).scroll(function(event){ 
     didScroll = true;
-});
+}); 
 
 setInterval(function() {
     if (didScroll) {
@@ -113,7 +113,7 @@ setInterval(function() {
     }
 }, 250);
 
-var function hasScrolled() {
+function hasScrolled() {
     var st = $(this).scrollTop();
     
 

@@ -69,10 +69,10 @@
 
 .speaker-2 {
 	a {
-		background-image: url("../img/speakers/slider/le_kien.jpg");
+		background-image: url("../img/speakers/slider/urban_petr.jpg");
 	}
 	&.is-selected a, a:hover {
-		background-image: url("../img/speakers/slider/le_kien_red.jpg");
+		background-image: url("../img/speakers/slider/urban_petr_red.jpg");
 	}
 } 
 
@@ -83,22 +83,13 @@
 	&.is-selected a, a:hover {
 		background-image: url("../img/speakers/slider/cislinsky_jan_red.jpg");
 	}
-} 
+}
 
 .speaker-4 {
 	a {
-		background-image: url("../img/speakers/slider/franek_ondrej.jpg");
+		background-image: url("../img/speakers/slider/zoudun_jiri.jpg");
 	}
 	&.is-selected a, a:hover {
-		background-image: url("../img/speakers/slider/franek_ondrej_red.jpg");
-	}
-} 
-
-.speaker-5 {
-	a {
-		background-image: url("../img/speakers/slider/bien_radek.jpg");
-	}
-	&.is-selected a, a:hover {
-		background-image: url("../img/speakers/slider/bien_radek_red.jpg");
+		background-image: url("../img/speakers/slider/zoudun_jiri_red.jpg");
 	}
 } 

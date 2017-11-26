@@ -49,14 +49,14 @@ var script_paths = [
 gulp.task('scripts', function() {
   return gulp.src(script_paths)
     .pipe(jshint('.jshintrc'))
-    .pipe(jshint.reporter('default'))
+    // .pipe(jshint.reporter('default'))
     .pipe(concat('main.js'))
     .pipe(gulp.dest('dist/js'))
     .pipe(rename({suffix: '.min'}))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
-    .pipe(browserSync.reload())
-    .pipe(notify({ message: 'Scripts task complete' }));
+    .pipe(browserSync.reload());
+    // .pipe(notify({ message: 'Scripts task complete' }));
 });
 
 

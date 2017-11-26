@@ -25,20 +25,25 @@
 		}
 
 		&.previous {
-			top: 280px;
-			left: 0;
+			top: 305px;
+			left: 50%;
+			transform: translateX(-70px) rotate(180deg);
 			@include sm {
 				top: 0;
 				right: 0;
 				left: auto;
+				transform: translateX(0) rotate(180deg);
 			}
 		}
 		&.next {
-			top: 280px;
-			right: 0;
+			top: 305px;
+			right: 50%;
+			transform: translateX(70px);
 
 			@include sm {
 				top: 80px;
+				transform: none;
+				right: 0;
 			}
 			@include md {
 				bottom: 0;
@@ -65,7 +70,8 @@
 .speakers-carousel__img {
 	text-align: center;
 	img {
-		// width: 245px;
+		width: 290px;
+		height: auto;
 		@include sm {
 			width: auto;
 			max-width: 100%;
@@ -79,9 +85,10 @@
 }
 
 .speakers__content {
-	margin-top: 30px;
+	margin-top: 90px;
 	padding: 0 20px;
 	@include sm {
+		margin-top: 30px;
 		padding: 0;
 	}
 
