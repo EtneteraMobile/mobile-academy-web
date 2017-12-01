@@ -4,7 +4,7 @@
 ;(function($){
   $(function(){
     
-      	$('.speakers-carousel').flickity({
+  	$('.speakers-carousel').flickity({
 	  // options
 	  cellAlign: 'left',
 	  pageDots: false,
@@ -106,13 +106,6 @@ $(window).scroll(function(event){
     didScroll = true;
 }); 
 
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
 function hasScrolled() {
     var st = $(this).scrollTop();
     
@@ -142,6 +135,14 @@ function hasScrolled() {
     
     lastScrollTop = st;
 }
+
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
 
 
 ///////////////////////////////////////

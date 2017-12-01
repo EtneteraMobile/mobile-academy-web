@@ -32,10 +32,7 @@ gulp.task('styles', function() {
     .pipe(rename({suffix: '.min'}))
     .pipe(cssnano())
     .pipe(gulp.dest('dist/css'))
-    .pipe(notify({ message: 'Styles task complete' }))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
+    .pipe(notify({ message: 'Styles task complete' }));
 });
 
 
@@ -49,14 +46,13 @@ var script_paths = [
 gulp.task('scripts', function() {
   return gulp.src(script_paths)
     .pipe(jshint('.jshintrc'))
-    // .pipe(jshint.reporter('default'))
+    .pipe(jshint.reporter('default'))
     .pipe(concat('main.js'))
     .pipe(gulp.dest('dist/js'))
     .pipe(rename({suffix: '.min'}))
-    // .pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
-    .pipe(browserSync.reload());
-    // .pipe(notify({ message: 'Scripts task complete' }));
+    .pipe(notify({ message: 'Scripts task complete' }));
 });
 
 
@@ -102,9 +98,13 @@ gulp.task('watch', function() {
   gulp.watch('src/img/**/*', ['images']);
 
   // Watch php files
-  gulp.watch('*.php').on('change', browserSync.reload);
+  // gulp.watch('*.php').on('change', browserSync.reload);
 
   // Create LiveReload server
   livereload.listen();
+
+  // Watch any files in dist/, reload on change
+  gulp.watch(['dist/**']).on('change', livereload.changed);
+
 
 });

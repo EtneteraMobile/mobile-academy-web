@@ -8,6 +8,16 @@
     <title>Mobile Academy 2017</title>
     
     <link rel="stylesheet" href="dist/css/style.min.css">
+
+    <!--Start of Zendesk Chat Script-->
+    <script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+    $.src="https://v2.zopim.com/?5IgGK9kEZDcnhLxw8SZfuyt7Gg2xZXOG";z.t=+new Date;$.
+    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+    </script>
+    <!--End of Zendesk Chat Script-->
   </head>
   <body>
     <div class="wrapper">
@@ -71,18 +81,18 @@
             </li>
             <li class="accordion__item">
               <div class="accordion__title">
-                Výběr účastníků.
+                Jak vybereme účastníky?
               </div>
               <div class="accordion__content">
-                <p>Na základě přijatých přihlášek pozveme zhruba dvě desítky účastníků na osobní setkání v lednu 2018. Z nich vybereme budoucí studenty, kteří poté nastoupí do Etnetera Mobile Academy a absolvují 8 týdenní kurz. </p>
+                <p>Na základě přijatých přihlášek vybereme zhruba dvě desítky účastníků na osobní setkání v lednu 2018. Z nich vybereme budoucí studenty, kteří absolvují osmi týdenní kurz.</p>
               </div>
             </li>
             <li class="accordion__item">
               <div class="accordion__title">
-                Jak akademie proběhne? 
+                Jak akademie proběhne?
               </div>
               <div class="accordion__content">
-                <p>Studium proběhne v 8 za sebou jdoucích sobot a to formou celodenních workshopů složených z teorie a praktických cvičení. Po každém workshopu vám bude zadán domácí úkol. Pro úspěšné ukončení kurzu je důležité mít odchozeno alespoň 80 procent z 2 měsíčního kurzu. Budou tě učit lidé přímo z oboru, kteří se mobilnímu vývoji věnují denně. K dispozici ti budou každý den konzultanti. Celá akademie bude zakončena závěrečným projektem a party :)</p>
+                <p>Studium proběhne v osmi za sebou jdoucích sobot a to formou celodenních workshopů složených z teorie a praktických cvičení. Po každém workshopu vám bude zadán domácí úkol. Pro úspěšné ukončení kurzu je důležité mít odchozeno alespoň 80 procent z 2 měsíčního kurzu. Budou tě učit lidé přímo z oboru, kteří se mobilnímu vývoji věnují denně. K dispozici ti budou každý den konzultanti. Celá akademie bude zakončena závěrečným projektem a party :)</p>
               </div>
             </li>
             <li class="accordion__item">
@@ -158,7 +168,7 @@
           <div class="col-md-11 col-lg-7 col-md-offset-2 col-lg-offset-4">
             <div class="text-center">
               <h2 class="center">Co získáš</h2>
-              <p>Přihlas se do mobilní akademie a získej unikátní příležitost stát se mobilním vývojářem v rámci 8 nadupaných sobot.</p>
+              <p>Úspěšným absolvováním akademie získáš kvalitní základ pro kariéru mobilního vývojáře. V případě oboustranné spokojenosti ji můžeš nastartovat rovnou u nás v Etneteře.</p>
             </div>
           </div>
         </div>
@@ -204,7 +214,9 @@
                   <span class="speakers__position">Lead iOS Developer</span>
                   Jan Čislinský
                 </h3>
-                <p>We feel that the Czech pool of mobile developers does not currently have a unified community that would meet regularly, bond, share true know-how and mutually move ahead. </p>
+                <p><strong>„Číslo”</strong> – jak je Honza nejčastěji oslovován u nás v Etneteře – se začal o iOS zajímat v roce 2013, kdy si koupil první iPhone. Jakožto perfekcionista byl operačním systémem iOS ohromen, proto se také rozhodl, že se začne zabývat vývojem pro tuto platformu.</p>
+<p>Součástí Etnetera rodiny se stal v roce 2015. Byl u vzniku mobilních aplikací <strong>Prima PLAY, O2 Extra Výhody, Viaplay a FORTUNA</strong>. Dále je autorem vlastní aplikace <strong>Zvednout to?</strong></p>
+<p><strong>V současné chvíli</strong> působí na pozici <strong>Lead iOS Developer</strong>.</p>
                 <ul class="speakers__social">
                   <li><a targer="_blank" href="https://www.linkedin.com/in/jcislinsky/"><svg xmlns="http://www.w3.org/2000/svg" width="21px" height="20px" viewBox="0 0 24.56 23.52"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_linkedin" data-name="icon linkedin" class="cls-1" d="M24.56,14.43v9.09H19.3V15c0-2.14-.76-3.59-2.67-3.59a2.87,2.87,0,0,0-2.7,1.93,3.53,3.53,0,0,0-.18,1.28v8.86H8.49s.07-14.37,0-15.86h5.27V9.91l0,.05h0V9.91A5.23,5.23,0,0,1,18.5,7.29C22,7.29,24.56,9.55,24.56,14.43ZM3,0a2.75,2.75,0,0,0-.47,5.48H3A2.75,2.75,0,0,0,3.39,0ZM.32,23.52H5.58V7.66H.32Z"/></g></g></svg></a></li>
                   <li><a targer="_blank" href="https://twitter.com/jcislinsky"><svg xmlns="http://www.w3.org/2000/svg" width="22px" height="20px" viewBox="0 0 28.1 22.61"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>icon twitter</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_twitter" data-name="icon twitter" class="cls-1" d="M0,20A16.43,16.43,0,0,0,8.84,22.6a16.22,16.22,0,0,0,16.41-16q0-.47,0-.95a11.65,11.65,0,0,0,2.87-3,11.51,11.51,0,0,1-3.31.9A5.73,5.73,0,0,0,27.33.42,11.7,11.7,0,0,1,23.67,1.8,5.8,5.8,0,0,0,19.46,0a5.73,5.73,0,0,0-5.62,7A16.41,16.41,0,0,1,2,1,5.68,5.68,0,0,0,3.74,8.67,5.81,5.81,0,0,1,1.13,8a5.73,5.73,0,0,0,4.62,5.67,5.83,5.83,0,0,1-2.6.1,5.76,5.76,0,0,0,5.39,4A11.69,11.69,0,0,1,0,20Z"/></g></g></svg></a></li>
@@ -224,7 +236,6 @@
                   <span class="speakers__position">iOS Developer & UX architekt</span>
                   Petr Urban
                 </h3>
-                <p>We feel that the Czech pool of mobile developers does not currently have a unified community that would meet regularly, bond, share true know-how and mutually move ahead. </p>
                 <ul class="speakers__social">
                   <li><a targer="_blank" href="https://www.linkedin.com/in/petr-urban-2abba175/"><svg xmlns="http://www.w3.org/2000/svg" width="21px" height="20px" viewBox="0 0 24.56 23.52"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_linkedin" data-name="icon linkedin" class="cls-1" d="M24.56,14.43v9.09H19.3V15c0-2.14-.76-3.59-2.67-3.59a2.87,2.87,0,0,0-2.7,1.93,3.53,3.53,0,0,0-.18,1.28v8.86H8.49s.07-14.37,0-15.86h5.27V9.91l0,.05h0V9.91A5.23,5.23,0,0,1,18.5,7.29C22,7.29,24.56,9.55,24.56,14.43ZM3,0a2.75,2.75,0,0,0-.47,5.48H3A2.75,2.75,0,0,0,3.39,0ZM.32,23.52H5.58V7.66H.32Z"/></g></g></svg></a></li>
                 </ul>
@@ -243,7 +254,6 @@
                   <span class="speakers__position">iOS Developer & Team Leader</span>
                   Jiří Zoudun
                 </h3>
-                <p>We feel that the Czech pool of mobile developers does not currently have a unified community that would meet regularly, bond, share true know-how and mutually move ahead. </p>
                 <ul class="speakers__social">
                   <li><a targer="_blank" href="https://www.instagram.com/_zoudy/"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="21px" viewBox="0 0 23.07 23.13"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_instagram" data-name="icon instagram" class="cls-1" d="M11.55,7.73a3.85,3.85,0,1,1-3.84,3.86h0a3.85,3.85,0,0,1,3.84-3.85m0-1.93a5.78,5.78,0,1,0,5.77,5.8h0A5.77,5.77,0,0,0,11.55,5.8Zm6.15-1.93a1.54,1.54,0,1,1-1.54,1.55h0A1.54,1.54,0,0,1,17.7,3.87h0ZM16.54,1.93a4.63,4.63,0,0,1,4.61,4.63v10a4.62,4.62,0,0,1-4.61,4.63h-10a4.62,4.62,0,0,1-4.61-4.63v-10A4.63,4.63,0,0,1,6.54,1.93h10m0-1.93h-10A6.56,6.56,0,0,0,0,6.55v10a6.56,6.56,0,0,0,6.54,6.55h10a6.56,6.56,0,0,0,6.54-6.55v-10A6.56,6.56,0,0,0,16.54,0Z"/></g></g></svg></a></li>
                   <li><a targer="_blank" href="https://www.linkedin.com/in/jirizoudun/"><svg xmlns="http://www.w3.org/2000/svg" width="21px" height="20px" viewBox="0 0 24.56 23.52"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_linkedin" data-name="icon linkedin" class="cls-1" d="M24.56,14.43v9.09H19.3V15c0-2.14-.76-3.59-2.67-3.59a2.87,2.87,0,0,0-2.7,1.93,3.53,3.53,0,0,0-.18,1.28v8.86H8.49s.07-14.37,0-15.86h5.27V9.91l0,.05h0V9.91A5.23,5.23,0,0,1,18.5,7.29C22,7.29,24.56,9.55,24.56,14.43ZM3,0a2.75,2.75,0,0,0-.47,5.48H3A2.75,2.75,0,0,0,3.39,0ZM.32,23.52H5.58V7.66H.32Z"/></g></g></svg></a></li>
@@ -264,7 +274,7 @@
                   <span class="speakers__position">Mobile Division Leader</span>
                   Miloš felix
                 </h3>
-                <p>We feel that the Czech pool of mobile developers does not currently have a unified community that would meet regularly, bond, share true know-how and mutually move ahead. </p>
+                <p>Po střední škole jsem začínal jako designér a animátor ve Flashi. Za vydělané peníze jsem si pořídil Macintosh a později první iPhone z USA. Nadchlo mě programování pro iOS a začal jsem se mu intenzivně věnovat. Vyzkoušel jsem si také kreativní práci v digitální agentuře a vedení lidí. Před 3 lety hledala Etnetera technologického tahouna mobilního vývoje a mě oslovila firemní kultura. V roce 2015 jsem se stal spoluzakladatelem mobilní divize, kterou dnes vedu.</p>
                 <ul class="speakers__social">
                   <li><a targer="_blank" href="https://www.linkedin.com/in/milosjascur/"><svg xmlns="http://www.w3.org/2000/svg" width="21px" height="20px" viewBox="0 0 24.56 23.52"><defs><style>.cls-1{fill:#aaa;}</style></defs><title>Datový zdroj 1</title><g id="Vrstva_2" data-name="Vrstva 2"><g id="Vrstva_1-2" data-name="Vrstva 1"><path id="icon_linkedin" data-name="icon linkedin" class="cls-1" d="M24.56,14.43v9.09H19.3V15c0-2.14-.76-3.59-2.67-3.59a2.87,2.87,0,0,0-2.7,1.93,3.53,3.53,0,0,0-.18,1.28v8.86H8.49s.07-14.37,0-15.86h5.27V9.91l0,.05h0V9.91A5.23,5.23,0,0,1,18.5,7.29C22,7.29,24.56,9.55,24.56,14.43ZM3,0a2.75,2.75,0,0,0-.47,5.48H3A2.75,2.75,0,0,0,3.39,0ZM.32,23.52H5.58V7.66H.32Z"/></g></g></svg></a></li>
                 </ul>
@@ -305,7 +315,6 @@
           <li>
               <span class="harmonogram__title">ZAHAJOVACÍ PÁRTY</span>
               <span class="harmonogram__number"><strong>02</strong>/2018</span>
-              <p>Nunc sed nisl nec neque quis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
           </li>
           <li>
               <span class="harmonogram__title">AKADEMIE JEDE</span>
