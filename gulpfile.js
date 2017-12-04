@@ -98,7 +98,7 @@ gulp.task('watch', function() {
   gulp.watch('src/img/**/*', ['images']);
 
   // Watch php files
-  // gulp.watch('*.php').on('change', browserSync.reload);
+  gulp.watch('*.php').on('change', browserSync.reload);
 
   // Create LiveReload server
   livereload.listen();

@@ -111,23 +111,23 @@
         <div class="about-carousel">
             <div class="about-carousel__item">
               <div class="img-placeholder">
-                <img src="/dist/img/about/1.jpg" alt="">
+                <img src="dist/img/about/1.jpg" alt="">
               </div>
               <div class="img-placeholder">
-                <img src="/dist/img/about/2.jpg" alt="">  
+                <img src="dist/img/about/2.jpg" alt="">  
               </div>
             </div>
             <div class="about-carousel__item bigger">
               <div class="img-placeholder">
-                <img src="/dist/img/about/3.jpg" alt="">
+                <img src="dist/img/about/3.jpg" alt="">
               </div>
             </div>
             <div class="about-carousel__item">
               <div class="img-placeholder">
-                <img src="/dist/img/about/4.jpg" alt="">
+                <img src="dist/img/about/4.jpg" alt="">
               </div>
               <div class="img-placeholder">
-                <img src="/dist/img/about/5.jpg" alt="">
+                <img src="dist/img/about/5.jpg" alt="">
               </div>
             </div>
           </div>
@@ -135,27 +135,27 @@
           <div class="about-carousel-mobile">
             <div class="about-carousel__item">
               <div class="img-placeholder">
-                <img src="/dist/img/about/1.jpg" alt="">
+                <img src="dist/img/about/1.jpg" alt="">
               </div>
             </div>
             <div class="about-carousel__item">
               <div class="img-placeholder">
-                <img src="/dist/img/about/2.jpg" alt="">
+                <img src="dist/img/about/2.jpg" alt="">
               </div>
             </div>
             <div class="about-carousel__item">
               <div class="img-placeholder">
-                <img src="/dist/img/about/3.jpg" alt="">
+                <img src="dist/img/about/3.jpg" alt="">
               </div>
             </div>
             <div class="about-carousel__item">
               <div class="img-placeholder">
-                <img src="/dist/img/about/4.jpg" alt="">
+                <img src="dist/img/about/4.jpg" alt="">
               </div>
             </div>
             <div class="about-carousel__item">
               <div class="img-placeholder">
-                <img src="/dist/img/about/5.jpg" alt="">
+                <img src="dist/img/about/5.jpg" alt="">
               </div>
             </div>
           </div>
@@ -363,5 +363,9 @@
 
     </div>
     <script type="text/javascript" src="dist/js/main.min.js"></script>
+
+    <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.13'><\/script>".replace("HOST", location.hostname));
+//]]></script>
   </body>
 </html>
