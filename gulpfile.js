@@ -60,7 +60,6 @@ gulp.task('images', function() {
   return gulp.src('src/img/**/*')
     .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
     .pipe(gulp.dest('dist/img'))
-    .pipe(browserSync.reload())
     .pipe(notify({ message: 'Images task complete' }));
 });
 
