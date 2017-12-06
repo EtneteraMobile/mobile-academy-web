@@ -123,14 +123,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "gulpfile.js",
-			"settings":
-			{
-				"buffer_size": 2854,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -634,10 +626,22 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/jancislinsky/Repos/Web/mobile-academy-web/Firebase/public"
+		"/Users/jancislinsky/Repos/Web/mobile-academy-web/Firebase/public",
+		"/Users/jancislinsky/Repos/Web/mobile-academy-web/Firebase/public/dist",
+		"/Users/jancislinsky/Repos/Web/mobile-academy-web/Firebase/public/email_template"
 	],
 	"file_history":
 	[
+		"/Users/jancislinsky/Repos/Web/mobile-academy-web/Firebase/public/email_template/01_after_registration_junior.html",
+		"/Users/jancislinsky/Repos/iOS/Fortuna-iOS/.gitlab/merge_request_templates/etn_merge.md",
+		"/Users/jancislinsky/Repos/iOS/etn-ios/Git/etn_merge.md",
+		"/Users/jancislinsky/Repos/iOS/etn-ios/Git/merge_request_templates/etn_merge.md",
+		"/Users/jancislinsky/Repos/iOS/etn-ios/Git/merge_request_templates/readme.txt",
+		"/Users/jancislinsky/Repos/iOS/etn-ios/Git/readme.txt",
+		"/Users/jancislinsky/Repos/Web/mobile-academy-web/Firebase/public/gulpfile.js",
+		"/Users/jancislinsky/Repos/Web/mobile-academy-web/Firebase/public/email_template/email_template.html",
+		"/Users/jancislinsky/Repos/Web/mobile-academy-web/Firebase/public/index.html",
+		"/Users/jancislinsky/Repos/Web/mobile-academy-web/Firebase/public/index.html~Stashed changes",
 		"/Users/jancislinsky/Repos/Web/mobile-academy-web/Firebase/public/els",
 		"/Users/jancislinsky/Repos/Web/mobile-academy-web/.gitmodules",
 		"/Users/jancislinsky/Repos/Web/mobile-academy-web/.git/index",
@@ -724,7 +728,6 @@
 		"/Users/jancislinsky/Downloads/logs-7/com.mobenga.fortuna-pl 2017-10-18 18-28.log",
 		"/Users/jancislinsky/Downloads/logs-6/com.mobenga.fortuna-pl 2017-10-18 12-39.log",
 		"/Users/jancislinsky/Downloads/logs-4/com.mobenga.fortuna-pl 2017-10-17 18-21.log",
-		"/Users/jancislinsky/Repos/Web/mobile-academy-web/Firebase/public/index.html",
 		"/Users/jancislinsky/Repos/iOS/Fortuna-iOS/Project/Resources/TestData/Esports/esports-events.json",
 		"/Users/jancislinsky/Downloads/smsspamcollection/SMSSpamCollection",
 		"/Users/jancislinsky/Google Drive/Podnikání/Jan Čislinský/Datová schránka/Odchozí/Přiznání k DPH + souhrnné hlášení/2017/9/Přiznání k dani z přidané hodnoty.xml",
@@ -756,20 +759,11 @@
 		"/Users/jancislinsky/Repos/iOS/Fortuna-iOS/Project/Resources/TestData/esports-EPL31-results-1507277274895 2.json",
 		"/Users/jancislinsky/Repos/iOS/Fortuna-iOS/Project/Resources/TestData/esports-EPL27-results-1507276836511.json",
 		"/Users/jancislinsky/Repos/iOS/Fortuna-iOS/Project/Resources/TestData/esports-EPL28-results-1507276942592.json",
-		"/Users/jancislinsky/Repos/iOS/Fortuna-iOS/Project/Resources/TestData/esports-EPL30-results-1507277077183.json",
-		"/Users/jancislinsky/Repos/iOS/Fortuna-iOS/Project/Resources/TestData/esports-EPL26-results-1507276919892.json",
-		"/Users/jancislinsky/Repos/iOS/Fortuna-iOS/Project/Resources/TestData/esports-EPL31-results-1507277274895.json",
-		"/Users/jancislinsky/Repos/iOS/Fortuna-iOS/Project/Resources/TestData/esports-EPL30-results-1507277076183.json",
-		"/Users/jancislinsky/Repos/iOS/Fortuna-iOS/Project/Resources/TestData/esports-EPL29-results-1507277045175.json",
-		"/Users/jancislinsky/Repos/iOS/Fortuna-iOS/Project/Resources/TestData/esports-EPL28-results-1507276941592.json",
-		"/Users/jancislinsky/Repos/iOS/Fortuna-iOS/Project/Resources/TestData/esports-EPL27-results-1507276835511.json",
-		"/Users/jancislinsky/Repos/iOS/Fortuna-iOS/Project/Resources/TestData/esports-EPL26-results-1507276918892.json",
-		"/Users/jancislinsky/Repos/iOS/Fortuna-iOS/Project/Resources/TestData/esports-EPL31-results-1507277273895.json",
-		"/Users/jancislinsky/Repos/iOS/Fortuna-iOS/Project/Resources/TestData/esports-EPL27-results.json"
+		"/Users/jancislinsky/Repos/iOS/Fortuna-iOS/Project/Resources/TestData/esports-EPL30-results-1507277077183.json"
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -780,9 +774,20 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"hh-center",
+			"INFO@etn",
+			"INFO@MOBILE",
+			"https://goo.gl/forms/FG5lZZSEnFSQ4qjK2",
+			"\"/(\\w)",
+			"\"/\\w",
+			"\"/dist",
+			"\"/\\w",
+			"\"/\\w*",
+			"\"/[a-Z]",
+			"\"/"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -790,6 +795,7 @@
 		"regex": true,
 		"replace_history":
 		[
+			"\"$1"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -806,39 +812,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "gulpfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2854,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1938,
-								1938
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1088.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -885,7 +860,7 @@
 	"project": "",
 	"replace":
 	{
-		"height": 46.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1234,7 +1209,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 238.0,
 	"status_bar_visible": true,
 	"template_settings":
