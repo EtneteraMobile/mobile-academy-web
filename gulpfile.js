@@ -79,7 +79,7 @@ gulp.task('clean', function() {
 
 gulp.task('build', function() {
   return gulp.src(['dist/**/*', 'fonts/**/*', '*.{html,png,css}'], {base:"."})
-  .pipe(gulp.dest('../Firebase/public/preview'))
+  .pipe(gulp.dest('../Firebase/public'))
   .pipe(notify({ message: 'Build task complete' }));
 });
 
