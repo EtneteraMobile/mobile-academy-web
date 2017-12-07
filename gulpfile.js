@@ -6,7 +6,7 @@
 var pkg = require('./package.json');
 
 var gulp = require('gulp'),
-	minifyCss = require('gulp-minify-css');
+  minifyCss = require('gulp-minify-css');
     sass = require('gulp-ruby-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     cssnano = require('gulp-cssnano'),
@@ -37,10 +37,10 @@ gulp.task('styles', function() {
 
 
 var script_paths = [
-		'node_modules/jquery/dist/jquery.js',
+    'node_modules/jquery/dist/jquery.js',
     'node_modules/flickity/dist/flickity.pkgd.js',
-		'src/js/**/*.js'
-	];
+    'src/js/**/*.js'
+  ];
 
 
 gulp.task('scripts', function() {
@@ -74,15 +74,18 @@ gulp.task('serve', ['watch'], function() {
 
 
 gulp.task('clean', function() {
-    return del(['dist/css', 'dist/js', 'dist/assets/img']);
+    return del(['dist/css', 'dist/js', 'dist/assets/img', '../Firebase/public'], {force: true});
 });
 
+gulp.task('build', function() {
+    return gulp.src(['dist/**/*', 'fonts/**/*', '*.{html,png,css}'], {base:"."})
+    .pipe(gulp.dest('../Firebase/public'))
+    .pipe(notify({ message: 'Build task complete' }));
+ });
 
 gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'scripts', 'images');
+  gulp.series('styles', 'scripts', 'images', 'build');
 });
-
-
 
 // Watch task
 gulp.task('watch', function() {
