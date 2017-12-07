@@ -78,13 +78,13 @@ gulp.task('clean', function() {
 });
 
 gulp.task('build', function() {
-    return gulp.src(['dist/**/*', 'fonts/**/*', '*.{html,png,css}'], {base:"."})
-    .pipe(gulp.dest('../Firebase/public'))
-    .pipe(notify({ message: 'Build task complete' }));
- });
+  return gulp.src(['dist/**/*', 'fonts/**/*', '*.{html,png,css}'], {base:"."})
+  .pipe(gulp.dest('../Firebase/public/preview'))
+  .pipe(notify({ message: 'Build task complete' }));
+});
 
 gulp.task('default', ['clean'], function() {
-  gulp.series('styles', 'scripts', 'images', 'build');
+  gulp.series('styles', 'scripts', 'images');
 });
 
 // Watch task
