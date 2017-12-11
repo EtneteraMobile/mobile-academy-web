@@ -84,7 +84,7 @@ gulp.task('build', function() {
 });
 
 gulp.task('default', ['clean'], function() {
-  gulp.series('styles', 'scripts', 'images');
+  gulp.start('styles', 'scripts', 'images');
 });
 
 // Watch task
