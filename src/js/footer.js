@@ -108,12 +108,13 @@ $(window).scroll(function(event){
 
 function hasScrolled() {
     var st = $(this).scrollTop();
+    var header = $('.home header');
     
 
     if(st >= 200) {
-    	$('header').addClass('small');
+    	header.addClass('small');
     } else {
-    	$('header').removeClass('small');
+    	header.removeClass('small');
     }
 
     // Make sure they scroll more than delta
@@ -125,11 +126,11 @@ function hasScrolled() {
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
-        $('header').removeClass('nav-down').addClass('nav-up');
+        header.removeClass('nav-down').addClass('nav-up');
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
+            header.removeClass('nav-up').addClass('nav-down');
         }
     }
     

@@ -1,0 +1,114 @@
+// Certificate
+
+.certificate {
+	position: relative;
+}
+
+.students {
+	margin-top: -50px;
+	margin-bottom: 100px;
+
+	@include sm {
+		margin-top: -100px;
+	}
+
+	@include md {
+		margin-top: -150px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.students__item {
+		padding: 30px 15px;
+		box-shadow: 2px 3px 30px 5px rgba(0,0,0,.1);
+		font-size: 1.6rem;
+		text-align: center;
+		margin-bottom: 20px;
+		background: url("../img/student-bg.png") left center #fff no-repeat;
+		background-size: auto 100%;
+
+		@include md {
+			flex-basis: 45%;
+			width: 45%;
+			margin: 0 1rem;
+			margin-bottom: 20px;
+			padding: 40px 30px;
+		}
+
+		@include lg {
+			margin: 0 2rem;	
+			margin-bottom: 40px;
+		}
+
+		.students__title {
+			display: block;
+			font-size: 1.5rem;
+			color: #999;
+		}
+
+		.students__name {
+			display: block;
+			color: $primary-color;
+			font-weight: 600;
+			font-size: 3rem;
+			margin: 20px 0 10px;
+
+			@include md {
+				line-height: 40px;
+				font-size: 4.3rem;
+				margin: 40px 0 30px;
+			}
+		}
+
+		.students__desc {
+			display: block;
+
+			@include md {
+				font-size: 1.8rem;
+			}
+		}
+	}
+}
+
+.mentors {
+	text-align: center;
+	border-bottom: 1px solid #d2d2d2;
+	padding: 0 0 50px;
+
+	ul {
+		padding: 0;
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-items: center;
+
+		@include md {
+			margin: 0 50px;
+		}
+
+		@include lg {
+			margin: 0 100px;
+		}
+
+		li {
+			margin: 0;
+			padding: 0;
+			font-size: 1.6rem;
+    		flex-basis: 50%;
+    		margin-bottom: 60px;
+    		color: #999;
+
+    		@include md {
+    			flex-basis: 30%;	
+    		}
+
+			strong {
+				font-size: 1.8rem;
+				display: block;
+				color: #000;
+			}
+		}
+	}
+}

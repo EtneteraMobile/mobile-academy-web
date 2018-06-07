@@ -60,6 +60,15 @@
 			}
 		}
 	}
+
+	.back {
+		font-size: 1.6rem;
+		color: #000;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }
 
 

@@ -2149,6 +2149,12 @@ h1 {
     margin-bottom: 40px;
   }
 }
+@media only screen and (min-width: 544px) {
+  .absolventi h1 {
+    font-size: 5.2rem;
+    line-height: 60px;
+  }
+}
 h1 span {
   display: block;
   font-size: 1.8rem;
@@ -2593,6 +2599,14 @@ img {
     height: 40px;
   }
 }
+.header .back {
+  font-size: 1.6rem;
+  color: #000;
+  text-decoration: underline;
+}
+.header .back:hover {
+  text-decoration: none;
+}
 
 .nav-up {
   top: -60px;
@@ -2909,6 +2923,17 @@ img {
     height: 800px;
   }
 }
+.absolventi .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
 .hero__content {
   position: absolute;
@@ -2924,6 +2949,13 @@ img {
     bottom: 100px;
   }
 }
+.absolventi .hero__content {
+  position: static;
+  bottom: auto;
+  -webkit-transform: none;
+          transform: none;
+  left: auto;
+}
 
 .hero__date {
   font-size: 1.6rem;
@@ -2935,6 +2967,14 @@ img {
   .hero__date {
     margin-bottom: 55px;
     font-size: 2.4rem;
+  }
+}
+@media only screen and (min-width: 544px) {
+  .absolventi .hero__date {
+    margin-bottom: 0;
+    font-size: 1.9rem;
+    max-width: 800px;
+    margin: 0 auto;
   }
 }
 
@@ -3545,4 +3585,135 @@ img {
 .harmonogram__number strong {
   font-size: 3.6rem;
   font-weight: 700;
+}
+
+.certificate {
+  position: relative;
+}
+
+.students {
+  margin-top: -50px;
+  margin-bottom: 100px;
+}
+@media only screen and (min-width: 544px) {
+  .students {
+    margin-top: -100px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .students {
+    margin-top: -150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.students .students__item {
+  padding: 30px 15px;
+  -webkit-box-shadow: 2px 3px 30px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 3px 30px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 20px;
+  background: url("../img/student-bg.png") left center #fff no-repeat;
+  background-size: auto 100%;
+}
+@media only screen and (min-width: 768px) {
+  .students .students__item {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    width: 45%;
+    margin: 0 1rem;
+    margin-bottom: 20px;
+    padding: 40px 30px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .students .students__item {
+    margin: 0 2rem;
+    margin-bottom: 40px;
+  }
+}
+.students .students__item .students__title {
+  display: block;
+  font-size: 1.5rem;
+  color: #999;
+}
+.students .students__item .students__name {
+  display: block;
+  color: #ff5858;
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 20px 0 10px;
+}
+@media only screen and (min-width: 768px) {
+  .students .students__item .students__name {
+    line-height: 40px;
+    font-size: 4.3rem;
+    margin: 40px 0 30px;
+  }
+}
+.students .students__item .students__desc {
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .students .students__item .students__desc {
+    font-size: 1.8rem;
+  }
+}
+
+.mentors {
+  text-align: center;
+  border-bottom: 1px solid #d2d2d2;
+  padding: 0 0 50px;
+}
+.mentors ul {
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .mentors ul {
+    margin: 0 50px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .mentors ul {
+    margin: 0 100px;
+  }
+}
+.mentors ul li {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-bottom: 60px;
+  color: #999;
+}
+@media only screen and (min-width: 768px) {
+  .mentors ul li {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+.mentors ul li strong {
+  font-size: 1.8rem;
+  display: block;
+  color: #000;
 }
