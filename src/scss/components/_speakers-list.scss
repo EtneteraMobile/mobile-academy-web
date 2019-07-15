@@ -23,12 +23,12 @@
 	.speaker__item {
 		margin: 0;
 		padding: 0;
-		width: 25%;
+		width: 33.33333%;
 		float: left;
 		text-align: center;
 		a {
 			display: block;
-			height: 200px;
+			height: 220px;
 			position: relative;
 			background-repeat: no-repeat;
 			background-position: center;
@@ -73,15 +73,6 @@
 	}
 	&.is-selected a, a:hover {
 		background-image: url("../img/speakers/slider/urban_petr_red.jpg");
-	}
-} 
-
-.speaker-3 {
-	a {
-		background-image: url("../img/speakers/slider/cislinsky_jan.jpg");
-	}
-	&.is-selected a, a:hover {
-		background-image: url("../img/speakers/slider/cislinsky_jan_red.jpg");
 	}
 }
 
