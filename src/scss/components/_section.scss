@@ -51,7 +51,8 @@
 			background-size: 100% auto;
 		}
 	}
-	&.speakers {
+	&.speakers,
+	&.speakers-android {
 		padding: 50px 0 0;
 		@include sm {
 			padding: 60px 0 0;

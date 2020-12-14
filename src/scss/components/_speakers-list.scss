@@ -3,8 +3,8 @@
 .speakers-list .flickity-slider {
 	transform: translate3d(0px, 0px, 0px) !important;
 }
-
-.speakers-list {
+.speakers-list,
+.speakers-list-android {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -57,17 +57,7 @@
 	left: 50%;
 	transform: translateX(-50%);
 }
-
 .speaker-1 {
-	a{
-		background-image: url("../img/speakers/slider/felix_milos.jpg");	
-	}
-	&.is-selected a, a:hover {
-		background-image: url("../img/speakers/slider/felix_milos_red.jpg");
-	}	
-} 
-
-.speaker-2 {
 	a {
 		background-image: url("../img/speakers/slider/urban_petr.jpg");
 	}
@@ -75,12 +65,43 @@
 		background-image: url("../img/speakers/slider/urban_petr_red.jpg");
 	}
 }
-
-.speaker-4 {
+.speaker-2 {
 	a {
-		background-image: url("../img/speakers/slider/zoudun_jiri.jpg");
+		background-image: url("../img/speakers/slider/beles_miroslav_white.jpg");
 	}
 	&.is-selected a, a:hover {
-		background-image: url("../img/speakers/slider/zoudun_jiri_red.jpg");
+		background-image: url("../img/speakers/slider/beles_miroslav_red.jpg");
 	}
-} 
+}
+.speaker-3 {
+	a{
+		background-image: url("../img/speakers/slider/pecev_adam_white.jpg");
+	}
+	&.is-selected a, a:hover {
+		background-image: url("../img/speakers/slider/pecev_adam_red.jpg");
+	}
+}
+.android .speaker-1 {
+	a{
+		background-image: url("../img/speakers/slider/bien_radek_white.jpg");
+	}
+	&.is-selected a, a:hover {
+		background-image: url("../img/speakers/slider/bien_radek_red.jpg");
+	}
+}
+.android .speaker-2 {
+	a{
+		background-image: url("../img/speakers/slider/valentovic_boris_white.jpg");
+	}
+	&.is-selected a, a:hover {
+		background-image: url("../img/speakers/slider/valentovic_boris_red.jpg");
+	}
+}
+.android .speaker-3 {
+	a{
+		background-image: url("../img/speakers/slider/oleksandr_balan_white.jpg");
+	}
+	&.is-selected a, a:hover {
+		background-image: url("../img/speakers/slider/oleksandr_balan_red.jpg");
+	}
+}
