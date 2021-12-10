@@ -779,8 +779,8 @@ img { max-width: 100% }
 .speakers-list .speaker__item a:hover .speakers-list__name, .speakers-list-android .speaker__item a:hover .speakers-list__name { color: white; text-decoration: none }
 .speakers-list .speaker__item.is-selected .speakers-list__name, .speakers-list-android .speaker__item.is-selected .speakers-list__name { color: white }
 .speakers-list__name { font-size: 1.6rem; text-transform: uppercase; font-weight: 700; color: black; position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%) }
-.speaker-1 a { background-image: url("../img/speakers/slider/urban_petr.jpg") }
-.speaker-1.is-selected a, .speaker-1 a:hover { background-image: url("../img/speakers/slider/urban_petr_red.jpg") }
+.speaker-1 a { background-image: url("../img/speakers/slider/marek_stovicek_white.jpg") }
+.speaker-1.is-selected a, .speaker-1 a:hover { background-image: url("../img/speakers/slider/marek_stovicek_red.jpg") }
 .speaker-2 a { background-image: url("../img/speakers/slider/beles_miroslav_white.jpg") }
 .speaker-2.is-selected a, .speaker-2 a:hover { background-image: url("../img/speakers/slider/beles_miroslav_red.jpg") }
 .speaker-3 a { background-image: url("../img/speakers/slider/pecev_adam_white.jpg") }
